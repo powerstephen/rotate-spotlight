@@ -95,6 +95,23 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+
+  /* Breeze section tokens */
+  --cream: oklch(0.965 0.018 85);
+  --ink: oklch(0.18 0.02 260);
+  --agent-bg: oklch(0.18 0.025 230);
+  --agent-bg-deep: oklch(0.14 0.025 235);
+  --agent-border: oklch(0.32 0.04 200 / 0.5);
+  --agent-mint: oklch(0.82 0.14 175);
+  --agent-mint-soft: oklch(0.82 0.14 175 / 0.7);
+  --agent-mint-dim: oklch(0.55 0.08 180 / 0.6);
+  --agent-coral: oklch(0.72 0.16 25);
+  --agent-text: oklch(0.95 0.01 200);
+  --agent-text-muted: oklch(0.65 0.04 210);
+  --shadow-card: 0 30px 60px -20px oklch(0.15 0.02 240 / 0.35);
+  --shadow-card-active: 0 40px 80px -20px oklch(0.15 0.04 220 / 0.55);
+  --gradient-agent: linear-gradient(160deg, oklch(0.2 0.03 230), oklch(0.13 0.025 240));
+  --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark {
