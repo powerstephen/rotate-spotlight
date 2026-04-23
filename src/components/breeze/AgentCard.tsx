@@ -105,13 +105,6 @@ export function AgentCard({ agent, active = false }: Props) {
                 color: "var(--agent-mint)",
                 textShadow: "0 0 8px oklch(0.82 0.14 175 / 0.6)",
               }}
-            />
-            <span
-              className="font-mono text-[10px] uppercase tracking-wider"
-              style={{
-                color: "var(--agent-mint)",
-                textShadow: "0 0 8px oklch(0.82 0.14 175 / 0.6)",
-              }}
             >
               Active
             </span>
