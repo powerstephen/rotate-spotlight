@@ -60,11 +60,11 @@ export function ProblemsSection() {
                     ? "var(--agent-mint-soft)"
                     : "var(--agent-border)",
                   background: lit
-                    ? "oklch(0.22 0.05 200 / 0.6)"
-                    : "oklch(0.16 0.025 235 / 0.5)",
+                    ? "var(--pill-bg-lit)"
+                    : "var(--pill-bg-dim)",
                   color: lit ? "var(--agent-mint)" : "var(--agent-text-muted)",
                   boxShadow: lit
-                    ? "0 0 24px -4px oklch(0.82 0.14 175 / 0.4)"
+                    ? "0 0 24px -4px var(--agent-mint-soft)"
                     : "none",
                   transitionTimingFunction: "var(--transition-smooth)",
                 }}
