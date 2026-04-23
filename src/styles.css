@@ -97,8 +97,10 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
 
   /* Breeze section tokens */
+  --bg-deep: oklch(0.11 0.018 245);
+  --bg-surface: oklch(0.14 0.022 240);
   --cream: oklch(0.965 0.018 85);
-  --ink: oklch(0.18 0.02 260);
+  --ink: oklch(0.95 0.01 200);
   --agent-bg: oklch(0.18 0.025 230);
   --agent-bg-deep: oklch(0.14 0.025 235);
   --agent-border: oklch(0.32 0.04 200 / 0.5);

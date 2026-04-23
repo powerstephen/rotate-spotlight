@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { AgentsSection } from "@/components/breeze/AgentsSection";
+import { ProblemsSection } from "@/components/breeze/ProblemsSection";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -17,7 +18,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main style={{ background: "var(--cream)" }}>
+    <main style={{ background: "var(--bg-deep)" }}>
+      <ProblemsSection />
       <AgentsSection />
     </main>
   );

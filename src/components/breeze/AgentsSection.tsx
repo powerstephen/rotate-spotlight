@@ -17,7 +17,7 @@ export function AgentsSection() {
   return (
     <section
       className="w-full px-6 py-24 md:py-32"
-      style={{ background: "var(--cream)" }}
+      style={{ background: "var(--bg-surface)" }}
     >
       <div className="mx-auto max-w-7xl">
         {/* Header */}
@@ -31,7 +31,7 @@ export function AgentsSection() {
           <div className="flex md:items-end md:justify-end">
             <p
               className="max-w-xs text-sm leading-relaxed"
-              style={{ color: "oklch(0.35 0.02 260)" }}
+              style={{ color: "var(--agent-text-muted)" }}
             >
               Breeze Agents deliver real-time, actionable signals for sales and
               service teams.
@@ -96,8 +96,8 @@ export function AgentsSection() {
                 aria-label="Previous"
                 className="flex h-11 w-11 items-center justify-center rounded-full border transition-all hover:scale-105"
                 style={{
-                  borderColor: "oklch(0.18 0.02 260 / 0.2)",
-                  color: "var(--ink)",
+                  borderColor: "var(--agent-border)",
+                  color: "var(--agent-mint)",
                 }}
               >
                 <ChevronLeft className="h-5 w-5" />
@@ -114,8 +114,8 @@ export function AgentsSection() {
                       width: i === active ? "28px" : "8px",
                       background:
                         i === active
-                          ? "var(--ink)"
-                          : "oklch(0.18 0.02 260 / 0.2)",
+                          ? "var(--agent-mint)"
+                          : "var(--agent-border)",
                     }}
                   />
                 ))}
@@ -126,8 +126,8 @@ export function AgentsSection() {
                 aria-label="Next"
                 className="flex h-11 w-11 items-center justify-center rounded-full border transition-all hover:scale-105"
                 style={{
-                  borderColor: "oklch(0.18 0.02 260 / 0.2)",
-                  color: "var(--ink)",
+                  borderColor: "var(--agent-border)",
+                  color: "var(--agent-mint)",
                 }}
               >
                 <ChevronRight className="h-5 w-5" />
