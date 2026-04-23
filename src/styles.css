@@ -113,10 +113,22 @@
   --agent-text-muted: oklch(0.65 0.04 210);
   --pill-bg-dim: oklch(0.16 0.025 235 / 0.5);
   --pill-bg-lit: oklch(0.22 0.05 200 / 0.6);
-  --shadow-card: 0 30px 60px -20px oklch(0.15 0.02 240 / 0.35);
-  --shadow-card-active: 0 40px 80px -20px oklch(0.15 0.04 220 / 0.55);
-  --shadow-mint-glow: 0 20px 50px -12px oklch(0.82 0.14 175 / 0.45);
-  --gradient-agent: linear-gradient(160deg, oklch(0.2 0.03 230), oklch(0.13 0.025 240));
+  --shadow-card: 0 30px 60px -20px oklch(0.05 0.02 240 / 0.6), 0 8px 20px -8px oklch(0.05 0.02 240 / 0.4);
+  --shadow-card-active:
+    0 50px 100px -20px oklch(0.05 0.02 240 / 0.7),
+    0 20px 40px -10px oklch(0.82 0.14 175 / 0.18),
+    0 0 0 1px oklch(0.82 0.14 175 / 0.12);
+  --shadow-mint-glow:
+    0 0 20px oklch(0.82 0.14 175 / 0.35),
+    0 0 40px oklch(0.82 0.14 175 / 0.2),
+    0 0 80px oklch(0.82 0.14 175 / 0.1);
+  --gradient-agent: linear-gradient(165deg, oklch(0.22 0.028 225) 0%, oklch(0.15 0.024 235) 55%, oklch(0.11 0.02 240) 100%);
+  --gradient-frame: linear-gradient(145deg, oklch(0.48 0.02 220) 0%, oklch(0.22 0.02 230) 35%, oklch(0.18 0.02 235) 65%, oklch(0.42 0.02 220) 100%);
+  --gradient-screen: linear-gradient(180deg, oklch(0.09 0.018 245) 0%, oklch(0.12 0.022 240) 100%);
+  --inset-screen:
+    inset 0 1px 0 oklch(1 0 0 / 0.06),
+    inset 0 0 0 1px oklch(0 0 0 / 0.4),
+    inset 0 2px 12px oklch(0 0 0 / 0.5);
   --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
