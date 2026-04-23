@@ -149,10 +149,21 @@
   --agent-text-muted: oklch(0.45 0.03 230);
   --pill-bg-dim: oklch(1 0 0 / 0.7);
   --pill-bg-lit: oklch(0.55 0.13 175 / 0.12);
-  --shadow-card: 0 30px 60px -20px oklch(0.4 0.05 240 / 0.18);
-  --shadow-card-active: 0 40px 80px -20px oklch(0.4 0.08 220 / 0.28);
-  --shadow-mint-glow: 0 20px 50px -12px oklch(0.55 0.13 175 / 0.35);
-  --gradient-agent: linear-gradient(160deg, oklch(1 0 0), oklch(0.96 0.01 230));
+  --shadow-card: 0 30px 60px -20px oklch(0.4 0.05 240 / 0.18), 0 4px 12px -4px oklch(0.4 0.05 240 / 0.12);
+  --shadow-card-active:
+    0 50px 100px -20px oklch(0.4 0.08 220 / 0.32),
+    0 20px 40px -10px oklch(0.55 0.13 175 / 0.18),
+    0 0 0 1px oklch(0.55 0.13 175 / 0.18);
+  --shadow-mint-glow:
+    0 0 20px oklch(0.55 0.13 175 / 0.3),
+    0 0 40px oklch(0.55 0.13 175 / 0.18);
+  --gradient-agent: linear-gradient(165deg, oklch(1 0 0) 0%, oklch(0.98 0.005 230) 55%, oklch(0.95 0.012 230) 100%);
+  --gradient-frame: linear-gradient(145deg, oklch(0.85 0.01 220) 0%, oklch(0.7 0.012 225) 35%, oklch(0.72 0.012 225) 65%, oklch(0.88 0.008 220) 100%);
+  --gradient-screen: linear-gradient(180deg, oklch(0.97 0.008 235) 0%, oklch(0.94 0.012 235) 100%);
+  --inset-screen:
+    inset 0 1px 0 oklch(1 0 0 / 0.6),
+    inset 0 0 0 1px oklch(0.55 0.04 220 / 0.18),
+    inset 0 2px 8px oklch(0.4 0.05 240 / 0.08);
 }
 
 .dark {
