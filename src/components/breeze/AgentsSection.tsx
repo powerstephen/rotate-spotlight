@@ -26,15 +26,14 @@ export function AgentsSection() {
             className="font-serif text-4xl leading-[1.1] tracking-tight md:text-5xl lg:text-[56px]"
             style={{ color: "var(--ink)", fontFamily: "Georgia, serif" }}
           >
-            Power your business with 24/7 AI-driven insights.
+            Six AI Agents. Built for profitable growth.
           </h2>
           <div className="flex md:items-end md:justify-end">
             <p
               className="max-w-xs text-sm leading-relaxed"
               style={{ color: "var(--agent-text-muted)" }}
             >
-              Breeze Agents deliver real-time, actionable signals for sales and
-              service teams.
+              Always on. Always protecting your sustainable revenues.
             </p>
           </div>
         </div>
