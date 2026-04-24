@@ -179,7 +179,8 @@ export function CTASection() {
 
                 <button
                   type="submit"
-                  className="group mt-7 flex w-full items-center justify-center gap-2 rounded-xl px-6 py-4 font-mono text-[13px] uppercase tracking-[0.18em] transition-all hover:scale-[1.01] active:scale-[0.99]"
+                  disabled={submitting}
+                  className="group mt-7 flex w-full items-center justify-center gap-2 rounded-xl px-6 py-4 font-mono text-[13px] uppercase tracking-[0.18em] transition-all hover:scale-[1.01] active:scale-[0.99] disabled:opacity-70"
                   style={{
                     background: "var(--agent-mint)",
                     color: "var(--bg-deep)",
@@ -187,9 +188,27 @@ export function CTASection() {
                     transitionTimingFunction: "var(--transition-smooth)",
                   }}
                 >
-                  Request beta access
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  {submitting ? (
+                    <>
+                      <Loader2 className="h-4 w-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      Request beta access
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </>
+                  )}
                 </button>
+
+                {error && (
+                  <p
+                    className="mt-3 text-center text-xs"
+                    style={{ color: "var(--agent-coral)" }}
+                  >
+                    {error}
+                  </p>
+                )}
 
                 <p
                   className="mt-4 text-center text-xs"
