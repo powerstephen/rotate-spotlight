@@ -172,7 +172,7 @@ export function CTASection() {
                   <Field
                     label="No. of clients"
                     name="clients"
-                    type="number"
+                    type="text"
                     placeholder="e.g. 120"
                   />
                 </div>
