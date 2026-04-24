@@ -41,7 +41,9 @@ export function ProblemsSection() {
             className="mt-5 text-4xl leading-[1.1] tracking-tight md:text-5xl lg:text-[56px]"
             style={{ color: "var(--agent-text)", fontFamily: "Georgia, serif" }}
           >
-            Every gap in revenue, surfaced and solved.
+            Tackling the{" "}
+            <span style={{ color: "var(--agent-mint)" }}>real problems</span>{" "}
+            of growing businesses.
           </h2>
         </div>
 
@@ -76,51 +78,15 @@ export function ProblemsSection() {
         </div>
 
         {/* Quotes carousel */}
-        <div className="mt-20 grid items-center gap-10 md:mt-24 md:grid-cols-[200px_1fr] md:gap-16">
-          {/* Source list (acts as nav) */}
-          <ul className="flex flex-row flex-wrap gap-x-6 gap-y-3 md:flex-col md:gap-2">
-            {QUOTES.map((q, i) => {
-              const isActive = i === active;
-              return (
-                <li key={q.id}>
-                  <button
-                    onClick={() => goTo(i)}
-                    className="group flex items-center gap-3 text-left"
-                  >
-                    <span
-                      className="block h-px w-6 transition-all duration-500"
-                      style={{
-                        background: isActive
-                          ? "var(--agent-mint)"
-                          : "var(--agent-border)",
-                        width: isActive ? "32px" : "16px",
-                      }}
-                    />
-                    <span
-                      className="font-mono text-[11px] uppercase tracking-[0.18em] transition-colors"
-                      style={{
-                        color: isActive
-                          ? "var(--agent-mint)"
-                          : "var(--agent-text-muted)",
-                      }}
-                    >
-                      {q.source}
-                    </span>
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-
-          {/* Quote stage */}
-          <div className="relative min-h-[180px] overflow-hidden md:min-h-[220px]">
+        <div className="mx-auto mt-20 max-w-4xl md:mt-24">
+          <div className="relative min-h-[200px] overflow-hidden md:min-h-[240px]">
             {QUOTES.map((q, i) => {
               const isActive = i === active;
               const offset = i - active;
               return (
                 <blockquote
                   key={q.id}
-                  className="absolute inset-0 flex flex-col justify-center transition-all duration-700"
+                  className="absolute inset-0 flex flex-col items-center justify-center text-center transition-all duration-700"
                   style={{
                     transform: isActive
                       ? "translateX(0)"
@@ -140,7 +106,7 @@ export function ProblemsSection() {
                     “{q.text}”
                   </p>
                   <footer
-                    className="mt-5 font-mono text-[11px] uppercase tracking-[0.22em]"
+                    className="mt-6 font-mono text-[11px] uppercase tracking-[0.22em]"
                     style={{ color: "var(--agent-mint-soft)" }}
                   >
                     — {q.source}

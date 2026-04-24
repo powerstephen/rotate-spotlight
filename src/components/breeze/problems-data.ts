@@ -1,37 +1,31 @@
 export type Problem =
-  | "Revenue Protection"
-  | "Deal Velocity"
-  | "Pipeline Health"
-  | "Margin Protection"
   | "Churn Prevention"
+  | "Sustainable Revenue"
   | "ICP Accuracy"
-  | "Pipeline Growth"
-  | "Customer Quality"
-  | "Customer Expansion"
-  | "Revenue Growth"
-  | "Pipeline Recovery"
-  | "Reactivation"
+  | "Margin Protection"
+  | "Pipeline Health"
+  | "Deal Velocity"
+  | "Dormant Accounts"
+  | "Upsell Potential"
   | "Revenue Leakage"
-  | "Resource Allocation"
-  | "Decision Making";
+  | "Customer Quality"
+  | "Pipeline Growth"
+  | "Reactivation";
 
 // Ordered to roughly fill 3 rows
 export const PROBLEMS: Problem[] = [
-  "Revenue Protection",
-  "Deal Velocity",
-  "Pipeline Health",
-  "Margin Protection",
   "Churn Prevention",
+  "Sustainable Revenue",
   "ICP Accuracy",
-  "Pipeline Growth",
-  "Customer Quality",
-  "Customer Expansion",
-  "Revenue Growth",
-  "Pipeline Recovery",
-  "Reactivation",
+  "Margin Protection",
+  "Pipeline Health",
+  "Deal Velocity",
+  "Dormant Accounts",
+  "Upsell Potential",
   "Revenue Leakage",
-  "Resource Allocation",
-  "Decision Making",
+  "Customer Quality",
+  "Pipeline Growth",
+  "Reactivation",
 ];
 
 export type Quote = {
@@ -45,44 +39,44 @@ export const QUOTES: Quote[] = [
   {
     id: "bain",
     source: "Bain & Company",
-    text: "A 5% increase in customer retention can boost profits by 25% to 95%.",
+    text: "A 5% increase in customer retention increases profits by 25% to 95%.",
     highlights: [
       "Churn Prevention",
-      "Customer Expansion",
+      "Sustainable Revenue",
       "Revenue Leakage",
-      "Resource Allocation",
-    ],
-  },
-  {
-    id: "mckinsey",
-    source: "McKinsey & Company",
-    text: "Companies implementing revenue intelligence report 15% higher sales efficiency and 20% shorter sales cycles.",
-    highlights: [
-      "Deal Velocity",
-      "Pipeline Health",
-      "Pipeline Growth",
-      "Decision Making",
+      "Upsell Potential",
     ],
   },
   {
     id: "hbr",
     source: "Harvard Business Review",
-    text: "Acquiring a new customer is anywhere from five to 25 times more expensive than retaining an existing one.",
+    text: "Acquiring a new customer is 5 to 25x more expensive than retaining an existing one.",
     highlights: [
-      "Churn Prevention",
+      "ICP Accuracy",
       "Customer Quality",
+      "Churn Prevention",
       "Reactivation",
-      "Pipeline Recovery",
+    ],
+  },
+  {
+    id: "mckinsey",
+    source: "McKinsey & Company",
+    text: "Revenue intelligence delivers 15% higher sales efficiency and 20% shorter sales cycles.",
+    highlights: [
+      "Deal Velocity",
+      "Pipeline Health",
+      "Pipeline Growth",
+      "Sustainable Revenue",
     ],
   },
   {
     id: "forrester",
     source: "Forrester",
-    text: "49% faster profit growth by focusing on the high-value customers who drive margins.",
+    text: "In most B2B companies, a significant share of customers cost more to serve than they generate in margin.",
     highlights: [
       "Margin Protection",
-      "Revenue Protection",
-      "Revenue Growth",
+      "Customer Quality",
+      "Revenue Leakage",
       "ICP Accuracy",
     ],
   },
