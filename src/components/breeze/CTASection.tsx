@@ -98,7 +98,7 @@ export function CTASection() {
               style={{ color: "var(--agent-text-muted)" }}
             >
               Most B2B companies are sitting on a goldmine of customer data but
-              extract very little value from it. Breeze changes that by turning
+              extract very little value from it. SignalOps changes that by turning
               historical interactions into actionable intelligence — helping
               revenue teams protect their best customers, close more deals, and
               identify more of the right prospects.
@@ -172,7 +172,7 @@ export function CTASection() {
                   <Field
                     label="No. of clients"
                     name="clients"
-                    type="number"
+                    type="text"
                     placeholder="e.g. 120"
                   />
                 </div>

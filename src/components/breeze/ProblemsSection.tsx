@@ -83,14 +83,17 @@ export function ProblemsSection() {
               return (
                 <blockquote
                   key={q.id}
-                  className="absolute inset-0 flex flex-col items-center justify-center text-center transition-all duration-700"
+                  className="absolute inset-0 flex flex-col items-center justify-center text-center"
                   style={{
                     transform: isActive
                       ? "translateX(0)"
                       : `translateX(${offset > 0 || (offset < 0 && direction === -1) ? "40px" : "-40px"})`,
                     opacity: isActive ? 1 : 0,
+                    visibility: isActive ? "visible" : "hidden",
                     pointerEvents: isActive ? "auto" : "none",
-                    transitionTimingFunction: "var(--transition-smooth)",
+                    transition: isActive
+                      ? "opacity 500ms var(--transition-smooth) 350ms, transform 700ms var(--transition-smooth) 350ms, visibility 0s linear 350ms"
+                      : "opacity 350ms var(--transition-smooth) 0ms, transform 700ms var(--transition-smooth) 0ms, visibility 0s linear 350ms",
                   }}
                 >
                   <p
