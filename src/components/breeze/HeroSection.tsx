@@ -159,25 +159,28 @@ export function HeroSection() {
 
           {/* RIGHT — terminal monitor */}
           <div className="relative flex flex-col items-center">
-            {/* Webcam-style pulsing dot */}
-            <div className="mb-3 flex items-center gap-2">
+            {/* Webcam pill with pulsing green dot */}
+            <div
+              className="mb-1 flex h-3 w-10 items-center justify-center rounded-full"
+              style={{
+                background:
+                  "linear-gradient(180deg, oklch(0.32 0.012 235), oklch(0.22 0.012 235))",
+                boxShadow:
+                  "inset 0 1px 0 oklch(1 0 0 / 0.06), 0 1px 2px oklch(0 0 0 / 0.4)",
+              }}
+            >
               <span
-                className="h-2 w-2 rounded-full"
+                className="h-1.5 w-1.5 rounded-full"
                 style={{
                   background: "oklch(0.78 0.19 145)",
                   boxShadow:
-                    "0 0 8px oklch(0.78 0.19 145 / 0.9), 0 0 16px oklch(0.78 0.19 145 / 0.5)",
+                    "0 0 6px oklch(0.78 0.19 145 / 0.9), 0 0 12px oklch(0.78 0.19 145 / 0.5)",
                   animation: "hero-rec-pulse 1.4s ease-in-out infinite",
                 }}
               />
-              <span
-                className="font-mono text-[10px] uppercase tracking-[0.22em]"
-                style={{ color: "var(--agent-text-muted)" }}
-              >
-                live signal feed
-              </span>
             </div>
 
+            {/* Monitor frame */}
             <div
               className="relative w-full max-w-md rounded-2xl p-[1.5px]"
               style={{
@@ -223,6 +226,30 @@ export function HeroSection() {
                 </div>
               </div>
             </div>
+
+            {/* Monitor neck */}
+            <div
+              style={{
+                width: "24px",
+                height: "20px",
+                background:
+                  "linear-gradient(180deg, oklch(0.28 0.012 235), oklch(0.22 0.012 235))",
+                boxShadow: "inset 0 1px 0 oklch(1 0 0 / 0.04)",
+              }}
+            />
+
+            {/* Monitor base */}
+            <div
+              style={{
+                width: "120px",
+                height: "6px",
+                borderRadius: "3px",
+                background:
+                  "linear-gradient(180deg, oklch(0.3 0.012 235), oklch(0.2 0.012 235))",
+                boxShadow:
+                  "inset 0 1px 0 oklch(1 0 0 / 0.05), 0 4px 12px oklch(0 0 0 / 0.4)",
+              }}
+            />
           </div>
         </div>
       </div>
