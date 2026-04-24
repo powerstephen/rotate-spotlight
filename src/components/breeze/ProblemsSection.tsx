@@ -18,10 +18,7 @@ export function ProblemsSection() {
 
   const activeHighlights = new Set<Problem>(QUOTES[active].highlights);
 
-  const goTo = (i: number) => {
-    setDirection(i > active ? 1 : -1);
-    setActive(i);
-  };
+
 
   return (
     <section
