@@ -9,11 +9,11 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Breeze Agents — 24/7 AI-driven insights" },
+      { title: "SignalOps Agents — 24/7 AI-driven insights" },
       {
         name: "description",
         content:
-          "Power your business with Breeze Agents — real-time, actionable AI signals for sales and service teams.",
+          "Power your business with SignalOps Agents — real-time, actionable AI signals for sales and service teams.",
       },
     ],
   }),
