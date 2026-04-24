@@ -3,7 +3,7 @@ import { Moon, Sun } from "lucide-react";
 
 type Mode = "dark" | "light";
 
-const STORAGE_KEY = "breeze-theme";
+const STORAGE_KEY = "signalops-theme";
 
 function applyTheme(mode: Mode) {
   const root = document.documentElement;
