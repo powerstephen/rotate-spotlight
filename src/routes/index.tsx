@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { AgentsSection } from "@/components/breeze/AgentsSection";
 import { ProblemsSection } from "@/components/breeze/ProblemsSection";
 import { CTASection } from "@/components/breeze/CTASection";
+import { HeroSection } from "@/components/breeze/HeroSection";
 import { ThemeToggle } from "@/components/breeze/ThemeToggle";
 
 export const Route = createFileRoute("/")({
@@ -22,6 +23,7 @@ function Index() {
   return (
     <main style={{ background: "var(--bg-deep)" }}>
       <ThemeToggle />
+      <HeroSection />
       <ProblemsSection />
       <AgentsSection />
       <CTASection />
