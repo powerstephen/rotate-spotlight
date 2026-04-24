@@ -96,7 +96,7 @@
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
 
-  /* Breeze section tokens — DARK (default) */
+  /* SignalOps section tokens — DARK (default) */
   --bg-deep: oklch(0.11 0.018 245);
   --bg-surface: oklch(0.14 0.022 240);
   --cream: oklch(0.965 0.018 85);
