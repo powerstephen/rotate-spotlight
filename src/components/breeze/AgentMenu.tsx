@@ -21,34 +21,28 @@ export function AgentMenu({ agents, activeIndex, onSelect }: Props) {
               "group flex items-center gap-4 rounded-2xl border px-4 py-3.5 text-left transition-all duration-300",
               isActive ? "border-[var(--agent-mint-soft)]" : "border-transparent",
             )}
-            style={{
-              background: isActive ? "oklch(0.16 0.025 235)" : "transparent",
-            }}
+            style={{ background: isActive ? "oklch(0.16 0.025 235)" : "transparent" }}
           >
             <div
-              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border transition-colors"
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border overflow-hidden transition-colors"
               style={{
-                borderColor: isActive
-                  ? "var(--agent-mint-soft)"
-                  : "var(--agent-border)",
+                borderColor: isActive ? "var(--agent-mint-soft)" : "var(--agent-border)",
                 background: "oklch(0.14 0.025 235)",
               }}
             >
-              <Icon
-                className="h-4.5 w-4.5 transition-colors"
-                strokeWidth={1.5}
-                style={{
-                  color: isActive
-                    ? "var(--agent-mint)"
-                    : "var(--agent-mint-dim)",
-                }}
-              />
+              {agent.iconImg ? (
+                <img src={agent.iconImg} alt={agent.name} className="h-8 w-8 object-contain" />
+              ) : (
+                <Icon
+                  className="h-4.5 w-4.5 transition-colors"
+                  strokeWidth={1.5}
+                  style={{ color: isActive ? "var(--agent-mint)" : "var(--agent-mint-dim)" }}
+                />
+              )}
             </div>
             <span
               className="font-mono text-base font-bold tracking-[0.18em] transition-colors"
-              style={{
-                color: isActive ? "var(--agent-mint)" : "var(--agent-mint-dim)",
-              }}
+              style={{ color: isActive ? "var(--agent-mint)" : "var(--agent-mint-dim)" }}
             >
               {agent.name}
             </span>
