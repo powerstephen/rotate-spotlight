@@ -12,15 +12,16 @@ export type Problem =
   | "Expansion Revenue"
   | "CRM Reactivation";
 
-// Ordered for even two-row distribution (alternating long/short, ~equal total width per row)
+// Row 1: Churn Prevention · Margin Protection · Forecast Accuracy · Deal Velocity · Account Health · Data Activation
+// Row 2: ARR Growth · ICP Accuracy · Expansion Revenue · Pipeline Health · Dormant Accounts · CRM Reactivation
 export const PROBLEMS: Problem[] = [
   "Churn Prevention",
   "Margin Protection",
-  "ARR Growth",
   "Forecast Accuracy",
   "Deal Velocity",
   "Account Health",
   "Data Activation",
+  "ARR Growth",
   "ICP Accuracy",
   "Expansion Revenue",
   "Pipeline Health",
