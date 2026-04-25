@@ -19,18 +19,18 @@ export function ProblemsSection() {
   const activeHighlights = new Set<Problem>(QUOTES[active].highlights);
 
   return (
-    <section className="w-full px-6 py-20 md:py-28" style={{ background: "var(--bg-deep)" }}>
+    <section className="w-full px-6 py-12 md:py-28" style={{ background: "var(--bg-deep)" }}>
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <h2
-            className="mt-5 text-3xl leading-tight tracking-tight md:text-4xl"
+            className="mt-5 text-3xl leading-tight tracking-tight md:text-4xl lg:text-5xl"
             style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
           >
             Tackling the <span style={{ color: "var(--agent-mint)" }}>real problems</span> of growing businesses.
           </h2>
         </div>
 
-        <div className="mt-12 flex flex-wrap justify-center gap-3 md:gap-3.5">
+        <div className="mt-8 flex flex-wrap justify-center gap-3 md:gap-3.5">
           {PROBLEMS.map((p) => {
             const lit = activeHighlights.has(p);
             return (
@@ -71,13 +71,13 @@ export function ProblemsSection() {
                   }}
                 >
                   <p
-                    className="text-xl leading-snug md:text-2xl md:leading-tight"
+                    className="text-2xl leading-snug md:text-3xl md:leading-tight"
                     style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                   >
                     "{q.text}"
                   </p>
                   <footer
-                    className="mt-5 font-mono text-[11px] uppercase tracking-[0.22em]"
+                    className="mt-5 font-mono text-[13px] uppercase tracking-[0.18em]"
                     style={{ color: "var(--agent-mint-soft)" }}
                   >
                     — {q.source}
