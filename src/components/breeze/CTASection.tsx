@@ -68,16 +68,16 @@ export function CTASection() {
             </span>
           </h2>
 
-          <div className="mt-5 flex justify-center">
+          <div className="mt-5 flex" style={{ justifyContent: "flex-start", paddingLeft: "8%" }}>
             <span
               className="inline-flex items-center gap-2 rounded-full border px-5 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em]"
               style={{
-                borderColor: "oklch(0.95 0.01 200 / 0.2)",
+                borderColor: "oklch(1 0 0 / 0.18)",
                 background: "var(--bg-deep)",
-                color: "var(--ink)",
+                color: "#ffffff",
               }}
             >
-              <span className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--ink)", opacity: 0.5 }} />
+              <span className="h-1.5 w-1.5 rounded-full" style={{ background: "#ffffff", opacity: 0.5 }} />
               Limited to 30 companies · Launching June 2026
             </span>
           </div>
