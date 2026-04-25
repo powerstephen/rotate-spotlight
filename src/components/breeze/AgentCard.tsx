@@ -54,8 +54,8 @@ export function AgentCard({ agent, active = false }: Props) {
         {/* Terminal screen */}
         <div className="mx-6 rounded-2xl p-[1.5px]"
           style={{ background: "var(--gradient-frame)", boxShadow: active ? "0 0 20px oklch(0.82 0.14 175 / 0.2)" : "none" }}>
-          <div className="rounded-[14.5px] p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", minHeight: "180px" }}>
-            <div className="space-y-2.5 font-mono text-[13px] leading-relaxed">
+          <div className="rounded-[14.5px] p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", height: "168px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <div className="space-y-2 font-mono text-[11.5px] leading-snug">
               {agent.logs.map((log, i) => (
                 <div key={i} style={{
                   color: log.type === "alert" ? "var(--agent-coral)" : log.type === "queued" ? "var(--agent-mint-soft)" : "var(--agent-text-muted)",
@@ -63,7 +63,7 @@ export function AgentCard({ agent, active = false }: Props) {
                 }}>{log.text}</div>
               ))}
             </div>
-            <button className="relative mt-5 w-full rounded-full py-2.5 font-mono text-xs font-medium transition-all hover:brightness-125"
+            <button className="relative w-full rounded-full py-1.5 font-mono text-[10px] font-medium transition-all hover:brightness-125"
               style={{ background: "linear-gradient(180deg, oklch(0.82 0.14 175 / 0.18), oklch(0.82 0.14 175 / 0.06))", boxShadow: "inset 0 0 0 1px oklch(0.82 0.14 175 / 0.4)", color: "var(--agent-mint)" }}>
               {agent.cta}
             </button>
