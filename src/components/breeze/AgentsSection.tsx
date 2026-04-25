@@ -11,20 +11,18 @@ export function AgentsSection() {
   const positions = [-1, 0, 1];
 
   return (
-    <section className="w-full px-6 py-24 md:py-32" style={{ background: "var(--bg-surface)" }}>
+    <section className="w-full px-6 py-12 md:py-16" style={{ background: "var(--bg-surface)" }}>
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-10 md:grid-cols-2 md:gap-16">
+        <div className="flex flex-col items-center text-center gap-3 mb-10">
           <h2
-            className="font-serif text-2xl leading-tight tracking-tight md:text-3xl lg:text-4xl"
+            className="text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl text-center w-full"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
           >
             <span style={{ color: "var(--ink)" }}>Six AI Agents. </span>
             <span style={{ color: "var(--agent-mint)" }}>Built for profitable growth.</span>
           </h2>
           <div className="flex md:items-end md:justify-end">
-            <p className="max-w-xs text-sm leading-relaxed" style={{ color: "var(--agent-text-muted)" }}>
-              Always on. Always protecting your sustainable revenues.
-            </p>
+            
           </div>
         </div>
 
