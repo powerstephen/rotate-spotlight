@@ -27,6 +27,7 @@ export const AGENTS: Agent[] = [
       { type: "info", text: "→ analysing 312 closed accounts..." },
       { type: "alert", text: "★ ICP pattern identified · 6 traits" },
       { type: "queued", text: "↑ 14 lookalike prospects surfaced" },
+      { type: "info", text: "→ ICP score updated across all accounts" },
     ],
   },
   {
@@ -38,6 +39,7 @@ export const AGENTS: Agent[] = [
       { type: "info", text: "→ scoring 47 active accounts..." },
       { type: "alert", text: "! 3 accounts · protect mode triggered" },
       { type: "queued", text: "↑ 2 accounts · upsell action queued" },
+      { type: "info", text: "→ health index recalculated · 12 signals" },
     ],
   },
   {
@@ -49,6 +51,7 @@ export const AGENTS: Agent[] = [
       { type: "info", text: "→ calculating margin per account..." },
       { type: "alert", text: "! Acme Ltd · cost exceeds revenue" },
       { type: "queued", text: "↑ 8 accounts · high-margin confirmed" },
+      { type: "alert", text: "! 2 accounts · margin below threshold" },
     ],
   },
   {
@@ -60,6 +63,7 @@ export const AGENTS: Agent[] = [
       { type: "info", text: "→ monitoring 89 dormant accounts..." },
       { type: "alert", text: "! TechCorp · Series B announced" },
       { type: "queued", text: "↑ re-engagement sequence queued" },
+      { type: "info", text: "→ 3 accounts · buying signal detected" },
     ],
   },
   {
@@ -71,6 +75,7 @@ export const AGENTS: Agent[] = [
       { type: "info", text: "→ scanning market signals..." },
       { type: "alert", text: "★ ScaleUp Co · ICP match · 94%" },
       { type: "queued", text: "↑ signal: VP Sales hired 3 days ago" },
+      { type: "info", text: "→ 6 new prospects · matched to ICP" },
     ],
   },
   {
@@ -82,6 +87,7 @@ export const AGENTS: Agent[] = [
       { type: "info", text: "→ monitoring 23 live deals..." },
       { type: "alert", text: "! Globex · no EB · 4 meetings in" },
       { type: "queued", text: "↑ next action: exec intro recommended" },
+      { type: "alert", text: "! Initech · 47 days at proposal stage" },
     ],
   },
 ];
