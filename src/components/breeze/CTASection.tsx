@@ -70,9 +70,14 @@ export function CTASection() {
 
           <div className="mt-5 flex justify-center">
             <span
-              className="font-mono text-[11px] uppercase tracking-[0.22em]"
-              style={{ color: "var(--agent-text-muted)" }}
+              className="inline-flex items-center gap-2 rounded-full border px-5 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em]"
+              style={{
+                borderColor: "oklch(0.95 0.01 200 / 0.2)",
+                background: "var(--bg-deep)",
+                color: "var(--ink)",
+              }}
             >
+              <span className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--ink)", opacity: 0.5 }} />
               Limited to 30 companies · Launching June 2026
             </span>
           </div>
