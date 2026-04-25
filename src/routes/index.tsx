@@ -55,15 +55,29 @@ function Footer() {
   );
 }
 
+function SectionDivider() {
+  return (
+    <div style={{ display: "flex", justifyContent: "center", width: "100%", overflow: "hidden" }}>
+      <div style={{
+        width: "320px",
+        height: "1px",
+        background: "linear-gradient(90deg, transparent 0%, oklch(0.82 0.14 175 / 0.6) 35%, oklch(0.82 0.14 175 / 0.95) 50%, oklch(0.82 0.14 175 / 0.6) 65%, transparent 100%)",
+        boxShadow: "0 0 10px oklch(0.82 0.14 175 / 0.3)",
+      }} />
+    </div>
+  );
+}
+
 function Index() {
   return (
     <main style={{ background: "var(--bg-deep)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
       <Nav />
       <HeroSection />
-      {/* Teal section divider — bright centre, fades to edges */}
-      <div style={{ width: "100%", height: "1px", background: "linear-gradient(90deg, transparent 0%, oklch(0.82 0.14 175 / 0.08) 15%, oklch(0.82 0.14 175 / 0.7) 40%, oklch(0.82 0.14 175 / 0.9) 50%, oklch(0.82 0.14 175 / 0.7) 60%, oklch(0.82 0.14 175 / 0.08) 85%, transparent 100%)", boxShadow: "0 0 12px oklch(0.82 0.14 175 / 0.25)" }} />
+      <SectionDivider />
       <ProblemsSection />
+      <SectionDivider />
       <AgentsSection />
+      <SectionDivider />
       <div id="cta"><CTASection /></div>
       <Footer />
     </main>
