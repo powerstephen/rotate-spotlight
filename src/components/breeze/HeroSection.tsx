@@ -99,12 +99,12 @@ export function HeroSection() {
         @keyframes phone-beacon { 0%,100%{opacity:1;box-shadow:0 0 8px oklch(0.78 0.19 145/0.9),0 0 16px oklch(0.78 0.19 145/0.5)}50%{opacity:0.5;box-shadow:0 0 4px oklch(0.78 0.19 145/0.5)} }
       `}</style>
       <div className="mx-auto max-w-7xl">
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-14" style={{ alignItems: "start" }}>
 
           {/* LEFT */}
-          <div>
+          <div style={{ paddingTop: "8px" }}>
 
-            <h1 style={{ color: "var(--ink)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(2.4rem, 4vw, 3.4rem)", fontWeight: 800, lineHeight: 1.08, letterSpacing: "-0.025em" }}>
+            <h1 style={{ color: "var(--ink)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(2.4rem, 4vw, 3.4rem)", fontWeight: 800, lineHeight: 1.14, letterSpacing: "-0.025em" }}>
               Your best customers,<br />
               your biggest risks,<br />
               your next deal.<br />
@@ -119,7 +119,7 @@ export function HeroSection() {
           <div className="relative flex flex-col items-center">
 
             {/* ── DESKTOP MONITOR ── */}
-            <div className="hidden lg:flex flex-col items-center w-full">
+            <div className="hidden lg:flex flex-col items-center" style={{ width: "92%", margin: "0 auto" }}>
               {/* Webcam */}
               <div className="mb-1.5 flex h-3.5 w-12 items-center justify-center rounded-full"
                 style={{ background: "linear-gradient(180deg, oklch(0.55 0.01 235), oklch(0.4 0.01 235))", boxShadow: "inset 0 1px 0 oklch(1 0 0/0.2), 0 2px 6px oklch(0 0 0/0.5)" }}>
