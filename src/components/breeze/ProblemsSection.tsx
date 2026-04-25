@@ -19,12 +19,12 @@ export function ProblemsSection() {
   const activeHighlights = new Set<Problem>(QUOTES[active].highlights);
 
   return (
-    <section className="w-full px-6 py-14 md:py-20" style={{ background: "var(--bg-deep)" }}>
+    <section className="w-full px-6 py-14 md:py-20" style={{ background: "var(--bg-surface)" }}>
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <h2
             className="text-2xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-center w-full whitespace-nowrap"
-            style={{ color: "var(--agent-text)", fontFamily: "\'Plus Jakarta Sans\', sans-serif", textAlign: "center" }}
+            style={{ color: "var(--agent-text)", fontFamily: "Montserrat, sans-serif", textAlign: "center" }}
           >
             Tackling the <span style={{ color: "var(--agent-mint)" }}>real problems</span> of growing businesses.
           </h2>
@@ -72,7 +72,7 @@ export function ProblemsSection() {
                 >
                   <p
                     className="text-2xl font-semibold leading-snug md:text-3xl"
-                    style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                    style={{ color: "var(--agent-text)", fontFamily: "'Montserrat', sans-serif" }}
                   >
                     "{q.text}"
                   </p>
