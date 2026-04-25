@@ -11,7 +11,7 @@ export function AgentsSection() {
   const positions = [-1, 0, 1];
 
   return (
-    <section className="w-full px-6 py-12 md:py-16" style={{ background: "var(--bg-surface)" }}>
+    <section className="w-full px-6 py-14 md:py-20" style={{ background: "var(--bg-surface)" }}>
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center text-center gap-3 mb-10">
           <h2
