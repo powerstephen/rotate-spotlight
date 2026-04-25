@@ -92,7 +92,7 @@ export function HeroSection() {
   );
 
   return (
-    <section className="w-full px-6 py-16 md:py-20" style={{ background: "var(--bg-deep)" }}>
+    <section className="w-full px-6 py-10 md:py-14" style={{ background: "var(--bg-deep)" }}>
       <style>{`
         @keyframes hero-cursor-blink { 0%,49%{opacity:1}50%,100%{opacity:0} }
         @keyframes hero-rec-pulse { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.75)} }
@@ -103,10 +103,8 @@ export function HeroSection() {
 
           {/* LEFT */}
           <div>
-            <div className="hidden lg:block font-mono text-[10px] uppercase tracking-[0.22em] mb-5" style={{ color: "var(--agent-mint)" }}>
-              Revenue Intelligence Platform
-            </div>
-            <h1 style={{ color: "var(--ink)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(1.9rem, 3.2vw, 2.6rem)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.02em" }}>
+
+            <h1 style={{ color: "var(--ink)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(2.4rem, 4vw, 3.4rem)", fontWeight: 800, lineHeight: 1.08, letterSpacing: "-0.025em" }}>
               Your best customers,<br />
               your biggest risks,<br />
               your next deal.<br />
@@ -114,10 +112,7 @@ export function HeroSection() {
               <span style={{ color: "var(--agent-mint)" }}>SignalOps unlocks it.</span>
             </h1>
 
-            <a href="#cta" className="mt-8 inline-flex items-center gap-2 rounded-full px-6 py-3 font-mono text-sm font-semibold transition-all hover:brightness-110"
-              style={{ background: "linear-gradient(180deg, oklch(0.82 0.14 175/0.95), oklch(0.72 0.13 175/0.9))", color: "oklch(0.14 0.025 235)", boxShadow: "inset 0 1px 0 oklch(1 0 0/0.2), 0 0 18px oklch(0.82 0.14 175/0.4)" }}>
-              Join the beta. 30 spots only →
-            </a>
+
           </div>
 
           {/* RIGHT */}
