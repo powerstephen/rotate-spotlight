@@ -9,7 +9,7 @@ export function AgentCard({ agent, active = false }: Props) {
     <div className={cn("group relative flex h-full w-full flex-col overflow-hidden rounded-[28px] p-[1.5px] transition-all duration-500")}
       style={{ background: "var(--gradient-frame)", boxShadow: active ? "var(--shadow-card-active)" : "var(--shadow-card)" }}>
       <div className="relative flex h-full w-full flex-col overflow-hidden rounded-[26.5px] p-5"
-        style={{ background: "var(--gradient-agent)", boxShadow: "inset 0 1px 0 oklch(1 0 0 / 0.04), inset 0 -1px 0 oklch(0 0 0 / 0.4)" }}>
+        style={{ background: "linear-gradient(160deg, oklch(0.22 0.012 235) 0%, oklch(0.18 0.01 235) 100%)", boxShadow: "inset 0 1px 0 oklch(1 0 0 / 0.04), inset 0 -1px 0 oklch(0 0 0 / 0.4)" }}>
         {active && (
           <div aria-hidden className="pointer-events-none absolute -top-24 left-1/2 h-56 w-[80%] -translate-x-1/2 rounded-full opacity-60 blur-3xl"
             style={{ background: "radial-gradient(closest-side, var(--agent-mint) 0%, transparent 70%)" }} />
@@ -43,7 +43,7 @@ export function AgentCard({ agent, active = false }: Props) {
         {/* Terminal screen — taller */}
         <div className="relative mt-4 rounded-2xl p-[1.5px]"
           style={{ background: "var(--gradient-frame)", boxShadow: active ? "0 0 0 1px oklch(0.82 0.14 175 / 0.15), 0 12px 40px -12px oklch(0.82 0.14 175 / 0.35)" : "0 8px 24px -8px oklch(0 0 0 / 0.5)" }}>
-          <div className="rounded-[14.5px] p-4" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", minHeight: "120px" }}>
+          <div className="rounded-[14.5px] p-4" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", minHeight: "160px" }}>
             <div className="space-y-1.5 font-mono text-[11px] leading-relaxed">
               {agent.logs.map((log, i) => (
                 <div key={i} style={{
@@ -60,7 +60,7 @@ export function AgentCard({ agent, active = false }: Props) {
         </div>
 
         {/* Body — with horizontal padding */}
-        <div className="relative mt-5 flex flex-1 flex-col px-1">
+        <div className="relative mt-5 flex flex-col px-4 pb-2">
           <h3 className="text-lg font-semibold leading-snug" style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{agent.heading}</h3>
           <p className="mt-2.5 text-[12px] leading-relaxed" style={{ color: "var(--agent-text-muted)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{agent.body}</p>
         </div>
