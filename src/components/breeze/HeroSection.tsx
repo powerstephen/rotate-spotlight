@@ -104,13 +104,36 @@ export function HeroSection() {
           {/* LEFT */}
           <div style={{ paddingTop: "8px" }}>
 
-            <h1 style={{ color: "var(--ink)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(2.4rem, 4vw, 3.4rem)", fontWeight: 800, lineHeight: 1.22, letterSpacing: "-0.025em" }}>
+            <h1 style={{ color: "var(--ink)", fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(2.4rem, 4vw, 3.4rem)", fontWeight: 800, lineHeight: 1.22, letterSpacing: "-0.025em" }}>
               Your best customers,<br />
               your biggest risks,<br />
               your next deal.<br />
               <span style={{ color: "var(--agent-mint)" }}>It's all in your data.</span><br />
               <span style={{ color: "var(--agent-mint)" }}>SignalOps unlocks it.</span>
             </h1>
+
+            <div style={{ marginTop: "2rem", display: "flex", justifyContent: "center" }}>
+              <a href="#cta"
+                style={{
+                  display: "inline-block",
+                  fontFamily: "'Montserrat', sans-serif",
+                  fontWeight: 600,
+                  fontSize: "13px",
+                  letterSpacing: "0.08em",
+                  padding: "12px 32px",
+                  borderRadius: "100px",
+                  background: "var(--agent-mint)",
+                  color: "var(--bg-deep)",
+                  boxShadow: "0 0 20px oklch(0.82 0.14 175 / 0.35)",
+                  textDecoration: "none",
+                  transition: "filter 0.2s",
+                }}
+                onMouseOver={e => (e.currentTarget.style.filter = "brightness(1.1)")}
+                onMouseOut={e => (e.currentTarget.style.filter = "none")}
+              >
+                Join beta launch
+              </a>
+            </div>
 
 
           </div>
