@@ -51,7 +51,7 @@ export function ProblemsSection() {
           })}
         </div>
 
-        <div className="mx-auto mt-14 max-w-4xl">
+        <div className="mx-auto mt-8 max-w-4xl">
           <div className="relative min-h-[200px] overflow-hidden md:min-h-[220px]">
             {QUOTES.map((q, i) => {
               const isActive = i === active;
