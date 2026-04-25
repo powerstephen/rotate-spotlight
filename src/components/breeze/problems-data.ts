@@ -12,16 +12,16 @@ export type Problem =
   | "Expansion Revenue"
   | "CRM Reactivation";
 
-// Row 1: Churn Prevention · Margin Protection · Forecast Accuracy · Deal Velocity · Account Health · Data Activation
-// Row 2: ARR Growth · ICP Accuracy · Expansion Revenue · Pipeline Health · Dormant Accounts · CRM Reactivation
+// Row 1 (5): Churn Prevention · Margin Protection · Forecast Accuracy · Deal Velocity · Account Health
+// Row 2 (7): ARR Growth · Data Activation · ICP Accuracy · Expansion Revenue · Pipeline Health · Dormant Accounts · CRM Reactivation
 export const PROBLEMS: Problem[] = [
   "Churn Prevention",
   "Margin Protection",
   "Forecast Accuracy",
   "Deal Velocity",
   "Account Health",
-  "Data Activation",
   "ARR Growth",
+  "Data Activation",
   "ICP Accuracy",
   "Expansion Revenue",
   "Pipeline Health",
