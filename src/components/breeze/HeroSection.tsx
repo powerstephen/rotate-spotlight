@@ -92,7 +92,7 @@ export function HeroSection() {
   );
 
   return (
-    <section className="w-full px-6 py-10 md:py-14" style={{ background: "var(--bg-deep)" }}>
+    <section className="w-full px-6 pt-10 pb-14 md:pt-14 md:pb-20" style={{ background: "var(--bg-deep)" }}>
       <style>{`
         @keyframes hero-cursor-blink { 0%,49%{opacity:1}50%,100%{opacity:0} }
         @keyframes hero-rec-pulse { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.75)} }
@@ -104,7 +104,7 @@ export function HeroSection() {
           {/* LEFT */}
           <div style={{ paddingTop: "8px" }}>
 
-            <h1 style={{ color: "var(--ink)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(2.4rem, 4vw, 3.4rem)", fontWeight: 800, lineHeight: 1.14, letterSpacing: "-0.025em" }}>
+            <h1 style={{ color: "var(--ink)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(2.4rem, 4vw, 3.4rem)", fontWeight: 800, lineHeight: 1.22, letterSpacing: "-0.025em" }}>
               Your best customers,<br />
               your biggest risks,<br />
               your next deal.<br />
