@@ -25,7 +25,7 @@ function Nav() {
         </div>
         {/* Centre: tagline */}
         <span className="font-mono uppercase tracking-[0.22em]"
-          style={{ color: "#ffffff", fontSize: "13px", opacity: 0.85, letterSpacing: "0.22em", textAlign: "center" }}>
+          style={{ color: "#ffffff", fontSize: "15px", fontWeight: 700, opacity: 0.9, letterSpacing: "0.22em", textAlign: "center" }}>
           Revenue Intelligence Platform
         </span>
         {/* Right: CTA */}
@@ -57,12 +57,12 @@ function Footer() {
 
 function SectionDivider() {
   return (
-    <div style={{ display: "flex", justifyContent: "center", width: "100%", overflow: "hidden" }}>
+    <div style={{ display: "flex", justifyContent: "center", width: "100%", padding: "0", lineHeight: 0 }}>
       <div style={{
-        width: "320px",
+        width: "280px",
         height: "1px",
-        background: "linear-gradient(90deg, transparent 0%, oklch(0.82 0.14 175 / 0.6) 35%, oklch(0.82 0.14 175 / 0.95) 50%, oklch(0.82 0.14 175 / 0.6) 65%, transparent 100%)",
-        boxShadow: "0 0 10px oklch(0.82 0.14 175 / 0.3)",
+        background: "linear-gradient(90deg, transparent 0%, oklch(0.82 0.14 175 / 0.55) 35%, oklch(0.82 0.14 175 / 0.95) 50%, oklch(0.82 0.14 175 / 0.55) 65%, transparent 100%)",
+        boxShadow: "0 0 10px oklch(0.82 0.14 175 / 0.28)",
       }} />
     </div>
   );
