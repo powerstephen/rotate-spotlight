@@ -33,10 +33,10 @@ export function AgentCard({ agent, active = false }: Props) {
         <div className="relative flex items-center justify-between px-6 pt-6 pb-4">
           <div className="flex items-center gap-4">
             {/* Icon: no background box, bigger, brighter */}
-            <div className="flex items-center justify-center flex-shrink-0" style={{ width: "48px", height: "48px" }}>
+            <div className="flex items-center justify-center flex-shrink-0" style={{ width: "56px", height: "56px" }}>
               {agent.iconImg
-                ? <img src={agent.iconImg} alt={agent.name} className="object-contain" style={{ width: "44px", height: "44px", filter: "drop-shadow(0 0 10px oklch(0.82 0.14 175 / 0.75)) brightness(1.2)" }} />
-                : <Icon className="h-7 w-7" strokeWidth={1.5} style={{ color: "var(--agent-mint)", filter: "drop-shadow(0 0 8px oklch(0.82 0.14 175 / 0.65))" }} />
+                ? <img src={agent.iconImg} alt={agent.name} className="object-contain" style={{ width: "52px", height: "52px", filter: "drop-shadow(0 0 10px oklch(0.82 0.14 175 / 0.75)) brightness(1.2)" }} />
+                : <Icon className="h-8 w-8" strokeWidth={1.5} style={{ color: "var(--agent-mint)", filter: "drop-shadow(0 0 8px oklch(0.82 0.14 175 / 0.65))" }} />
               }
             </div>
             <div>
