@@ -132,14 +132,13 @@ export function HeroSection() {
                 style={{ background: "linear-gradient(180deg, oklch(0.55 0.01 235), oklch(0.4 0.01 235))", boxShadow: "inset 0 1px 0 oklch(1 0 0/0.2), 0 2px 6px oklch(0 0 0/0.5)" }}>
                 <span className="h-2 w-2 rounded-full" style={{ background: "oklch(0.78 0.19 145)", animation: "hero-rec-pulse 1.4s ease-in-out infinite" }} />
               </div>
-              {/* Metallic frame — constrained width, taller */}
-              <div className="relative rounded-2xl p-[2.5px]" style={{
-                width: "min(100%, 480px)",
+              {/* Metallic frame — wide 16:10 monitor matching reference */}
+              <div className="relative w-full rounded-2xl p-[3px]" style={{
                 background: "linear-gradient(145deg, oklch(0.75 0.005 235) 0%, oklch(0.45 0.008 235) 40%, oklch(0.65 0.005 235) 60%, oklch(0.38 0.008 235) 100%)",
                 boxShadow: "0 0 40px oklch(0.82 0.14 175/0.15), 0 24px 60px oklch(0 0 0/0.6)",
               }}>
                 <div className="rounded-[13px] p-2.5" style={{ background: "linear-gradient(180deg, oklch(0.42 0.008 235) 0%, oklch(0.32 0.008 235) 100%)", boxShadow: "inset 0 2px 4px oklch(0 0 0/0.3)" }}>
-                  <div className="rounded-xl overflow-hidden" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", minHeight: "380px", padding: "16px 20px" }}>
+                  <div className="rounded-xl overflow-hidden" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", aspectRatio: "16/10", padding: "16px 20px" }}>
                     <div className="flex items-center gap-2 mb-4 pb-3" style={{ borderBottom: "1px solid oklch(0.32 0.04 200/0.2)" }}>
                       <span className="h-2.5 w-2.5 rounded-full" style={{ background: "oklch(0.65 0.18 25/0.8)" }} />
                       <span className="h-2.5 w-2.5 rounded-full" style={{ background: "oklch(0.75 0.14 85/0.8)" }} />
