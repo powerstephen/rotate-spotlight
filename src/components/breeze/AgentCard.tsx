@@ -71,7 +71,7 @@ export function AgentCard({ agent, active = false }: Props) {
         </div>
 
         {/* Body */}
-        <div className="flex flex-col px-6 pt-5 pb-6 flex-1">
+        <div className="flex flex-col px-8 pt-5 pb-7 flex-1">
           <h3 className="text-[18px] font-bold leading-snug mb-3" style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{agent.heading}</h3>
           <p className="text-[14px] leading-relaxed flex-1" style={{ color: "var(--agent-text-muted)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{agent.body}</p>
           <div className="mt-4 pt-3 flex items-center gap-2" style={{ borderTop: "1px solid oklch(0.82 0.14 175 / 0.12)" }}>
