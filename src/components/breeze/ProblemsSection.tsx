@@ -19,7 +19,7 @@ export function ProblemsSection() {
   const activeHighlights = new Set<Problem>(QUOTES[active].highlights);
 
   return (
-    <section className="w-full px-6 py-12 md:py-28" style={{ background: "var(--bg-deep)" }}>
+    <section className="w-full px-6 py-14 md:py-20" style={{ background: "var(--bg-deep)" }}>
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <h2
@@ -30,7 +30,7 @@ export function ProblemsSection() {
           </h2>
         </div>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-3 md:gap-3.5">
+        <div className="mt-10 flex flex-wrap justify-center gap-3 md:gap-3.5">
           {PROBLEMS.map((p) => {
             const lit = activeHighlights.has(p);
             return (
