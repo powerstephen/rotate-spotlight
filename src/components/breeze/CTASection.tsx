@@ -33,7 +33,7 @@ export function CTASection() {
 
   return (
     <section
-      className="relative w-full overflow-hidden px-6 py-24 md:py-32"
+      className="relative w-full overflow-hidden px-6 py-14 md:py-20"
       style={{ background: "var(--bg-deep)" }}
     >
       {/* Decorative grid lines */}
@@ -59,7 +59,7 @@ export function CTASection() {
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
           <h2
-            className="text-3xl leading-tight tracking-tight md:text-4xl lg:text-5xl"
+            className="text-3xl leading-tight tracking-tight md:text-4xl lg:text-5xl whitespace-nowrap"
             style={{
               color: "var(--agent-text)",
               fontFamily: "'Plus Jakarta Sans', sans-serif",
