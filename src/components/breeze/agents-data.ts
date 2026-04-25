@@ -10,6 +10,7 @@ export type Agent = {
   label: string;
   name: string;
   icon: typeof Target;
+  iconImg?: string;
   cta: string;
   heading: string;
   body: string;
@@ -22,6 +23,7 @@ export const AGENTS: Agent[] = [
     label: "AI Agent",
     name: "ICP",
     icon: Target,
+    iconImg: "/agent-icp.png",
     cta: "Review ICP Profile",
     heading: "Know exactly who to sell to.",
     body: "Analyses your real revenue data — who expanded, who churned, who has the highest LTV — and builds a precise profile of your most profitable customer. Then tells you where to find more of them.",
@@ -36,6 +38,7 @@ export const AGENTS: Agent[] = [
     label: "AI Agent",
     name: "IGNITE",
     icon: Zap,
+    iconImg: "/agent-ignite.png",
     cta: "Take Action on Flags",
     heading: "A live health score for every customer.",
     body: "Scores every active customer on a signal-driven health index. Low score triggers protect mode — re-engage before they leave. High score flags upsell potential before your team even thinks to ask.",
@@ -50,6 +53,7 @@ export const AGENTS: Agent[] = [
     label: "AI Agent",
     name: "PROFIT",
     icon: TrendingUp,
+    iconImg: "/agent-profit.png",
     cta: "Review Profit Matrix",
     heading: "See who's profitable and who's draining you.",
     body: "Classifies every customer by true cost to serve. Accounts that look healthy on MRR but are quietly destroying your margin get flagged before they put your best customers at risk.",
@@ -64,6 +68,7 @@ export const AGENTS: Agent[] = [
     label: "AI Agent",
     name: "RECOVER",
     icon: RefreshCcw,
+    iconImg: "/agent-recover.png",
     cta: "Review Re-engagement Queue",
     heading: "Win back accounts before they're gone for good.",
     body: "Watches every dormant and closed-lost account for renewed buying signals — hiring changes, funding events, product launches. Re-engages with context-aware outreach the moment they're back in market.",
@@ -78,6 +83,7 @@ export const AGENTS: Agent[] = [
     label: "AI Agent",
     name: "GENERATE",
     icon: Rocket,
+    iconImg: "/agent-generate.png",
     cta: "Review Prospects",
     heading: "Find your next best customers before they find you.",
     body: "Continuously matches live buying signals against your ICP — funding rounds, senior hires, product launches. Surfaces the right companies at exactly the right moment with verified contact data.",
@@ -92,6 +98,7 @@ export const AGENTS: Agent[] = [
     label: "AI Agent",
     name: "DEAL",
     icon: Trophy,
+    iconImg: "/agent-deal.png",
     cta: "Review Stalled Deals",
     heading: "Stop deals dying in your pipeline.",
     body: "Monitors every live opportunity for stall signals — no economic buyer after three meetings, champion gone dark, competitor mentioned. Tells your rep exactly what to do next before the deal goes cold.",
