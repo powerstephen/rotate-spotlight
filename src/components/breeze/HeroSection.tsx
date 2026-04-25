@@ -3,21 +3,21 @@ import { useEffect, useRef, useState } from "react";
 type Signal = { type: "info" | "alert" | "queued"; agent: string; text: string; };
 
 const SIGNALS: Signal[] = [
-  { type: "alert",  agent: "Deal",     text: "no economic buyer · 4 meetings in" },
-  { type: "alert",  agent: "Ignite",   text: "health score dropped to 31 · protect mode" },
-  { type: "queued", agent: "Generate", text: "Series A raised · $4.2m · in-market signal" },
-  { type: "alert",  agent: "Deal",     text: "deal stalled · 47 days at proposal stage" },
-  { type: "queued", agent: "Generate", text: "new CRO hired · outreach window open" },
-  { type: "info",   agent: "Recover",  text: "14 months dormant · re-engagement signal" },
-  { type: "queued", agent: "ICP",      text: "ICP match · 94% · contact verified" },
-  { type: "alert",  agent: "Ignite",   text: "champion gone dark · next action needed" },
-  { type: "info",   agent: "Deal",     text: "competitor evaluation detected · act now" },
-  { type: "queued", agent: "Generate", text: "VP Sales hired · buying signal confirmed" },
-  { type: "alert",  agent: "Profit",   text: "cost exceeds revenue · margin risk flagged" },
-  { type: "queued", agent: "Ignite",   text: "upsell ready · expansion signal fired" },
-  { type: "info",   agent: "Deal",     text: "no decision maker engaged · stall risk" },
-  { type: "alert",  agent: "Profit",   text: "MRR healthy · margin negative · flagged" },
-  { type: "queued", agent: "Recover",  text: "Series B announced · re-engage now" },
+  { type: "alert",  agent: "Deal",     text: "no economic buyer engaged · 4 meetings in · stall risk" },
+  { type: "alert",  agent: "Ignite",   text: "health score dropped to 31 · protect mode triggered" },
+  { type: "queued", agent: "Generate", text: "Series A raised · $4.2m · strong in-market signal" },
+  { type: "alert",  agent: "Deal",     text: "deal stalled · 47 days at proposal stage · act now" },
+  { type: "queued", agent: "Generate", text: "new CRO hired · outreach window open · high intent" },
+  { type: "info",   agent: "Recover",  text: "14 months dormant · re-engagement signal detected" },
+  { type: "queued", agent: "ICP",      text: "strong ICP match · 94% fit · contact verified" },
+  { type: "alert",  agent: "Ignite",   text: "champion gone dark · next best action needed now" },
+  { type: "info",   agent: "Deal",     text: "competitor evaluation detected · immediate action needed" },
+  { type: "queued", agent: "Generate", text: "VP Sales hired 3 days ago · buying signal confirmed" },
+  { type: "alert",  agent: "Profit",   text: "cost exceeds revenue · margin risk flagged · review" },
+  { type: "queued", agent: "Ignite",   text: "upsell ready · expansion signal fired · high score" },
+  { type: "info",   agent: "Deal",     text: "no decision maker engaged · pipeline stall risk high" },
+  { type: "alert",  agent: "Profit",   text: "MRR looks healthy · margin is negative · flagged" },
+  { type: "queued", agent: "Recover",  text: "Series B announced · dormant account · re-engage now" },
 ];
 
 const MAX_LINES = 9;
@@ -146,7 +146,7 @@ export function HeroSection() {
                       <span className="h-2.5 w-2.5 rounded-full" style={{ background: "oklch(0.72 0.19 145/0.8)" }} />
                       <span className="ml-3 font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--agent-mint-dim)" }}>SignalOps · Live Signal Feed</span>
                     </div>
-                    <div className="space-y-2.5 font-mono text-[11px] leading-relaxed">
+                    <div className="space-y-2.5 font-mono text-[12px] leading-relaxed">
                       {trimmed.map(line => <SignalLine key={line.id} line={line} />)}
                     </div>
                   </div>
