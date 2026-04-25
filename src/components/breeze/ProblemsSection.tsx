@@ -30,7 +30,7 @@ export function ProblemsSection() {
           </h2>
         </div>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-3 md:gap-3.5">
+        <div className="mt-14 flex flex-wrap justify-center gap-3 md:gap-3.5">
           {PROBLEMS.map((p) => {
             const lit = activeHighlights.has(p);
             return (
