@@ -1,31 +1,31 @@
 export type Problem =
   | "Churn Prevention"
-  | "Sustainable Revenue"
+  | "ARR Growth"
   | "ICP Accuracy"
   | "Margin Protection"
-  | "Pipeline Health"
   | "Deal Velocity"
+  | "Account Health"
+  | "Data Activation"
+  | "Forecast Accuracy"
+  | "Pipeline Health"
   | "Dormant Accounts"
-  | "Upsell Potential"
-  | "Revenue Leakage"
-  | "Customer Quality"
-  | "Pipeline Growth"
-  | "Reactivation";
+  | "Expansion Revenue"
+  | "CRM Reactivation";
 
-// Ordered to roughly fill 3 rows
+// Ordered for even two-row distribution
 export const PROBLEMS: Problem[] = [
   "Churn Prevention",
-  "Sustainable Revenue",
+  "ARR Growth",
   "ICP Accuracy",
   "Margin Protection",
-  "Pipeline Health",
   "Deal Velocity",
+  "Account Health",
+  "Data Activation",
+  "Forecast Accuracy",
+  "Pipeline Health",
   "Dormant Accounts",
-  "Upsell Potential",
-  "Revenue Leakage",
-  "Customer Quality",
-  "Pipeline Growth",
-  "Reactivation",
+  "Expansion Revenue",
+  "CRM Reactivation",
 ];
 
 export type Quote = {
@@ -42,9 +42,9 @@ export const QUOTES: Quote[] = [
     text: "A 5% increase in customer retention increases profits by 25% to 95%.",
     highlights: [
       "Churn Prevention",
-      "Sustainable Revenue",
-      "Revenue Leakage",
-      "Upsell Potential",
+      "ARR Growth",
+      "Account Health",
+      "Expansion Revenue",
     ],
   },
   {
@@ -53,9 +53,9 @@ export const QUOTES: Quote[] = [
     text: "Acquiring a new customer is 5 to 25x more expensive than retaining an existing one.",
     highlights: [
       "ICP Accuracy",
-      "Customer Quality",
+      "Account Health",
       "Churn Prevention",
-      "Reactivation",
+      "CRM Reactivation",
     ],
   },
   {
@@ -65,8 +65,8 @@ export const QUOTES: Quote[] = [
     highlights: [
       "Deal Velocity",
       "Pipeline Health",
-      "Pipeline Growth",
-      "Sustainable Revenue",
+      "Forecast Accuracy",
+      "ARR Growth",
     ],
   },
   {
@@ -75,8 +75,8 @@ export const QUOTES: Quote[] = [
     text: "In most B2B companies, a significant share of customers cost more to serve than they generate in margin.",
     highlights: [
       "Margin Protection",
-      "Customer Quality",
-      "Revenue Leakage",
+      "Account Health",
+      "Data Activation",
       "ICP Accuracy",
     ],
   },
