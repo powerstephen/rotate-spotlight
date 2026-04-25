@@ -23,8 +23,8 @@ export function ProblemsSection() {
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <h2
-            className="mt-5 text-3xl leading-tight tracking-tight md:text-4xl lg:text-5xl"
-            style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+            className="mt-5 text-2xl font-bold leading-tight tracking-tight md:text-3xl lg:text-4xl whitespace-nowrap"
+            style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif", textAlign: "center" }}
           >
             Tackling the <span style={{ color: "var(--agent-mint)" }}>real problems</span> of growing businesses.
           </h2>
