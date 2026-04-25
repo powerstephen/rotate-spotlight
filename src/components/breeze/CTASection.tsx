@@ -68,9 +68,9 @@ export function CTASection() {
             </span>
           </h2>
 
-          <div className="mt-7 flex justify-center">
+          <div className="mt-5 flex justify-center">
             <span
-              className="inline-flex items-center gap-2.5 rounded-full border px-4 py-2 font-mono text-[11px] uppercase tracking-[0.22em]"
+              className="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em]"
               style={{
                 borderColor: "var(--agent-coral)",
                 background: "var(--agent-coral-soft)",
@@ -87,7 +87,7 @@ export function CTASection() {
         </div>
 
         {/* Body grid */}
-        <div className="mt-16 grid gap-12 md:mt-20 md:grid-cols-2 md:gap-16">
+        <div className="mt-10 grid gap-12 md:mt-12 md:grid-cols-2 md:gap-16">
           {/* Copy */}
           <div className="space-y-5">
             <p
