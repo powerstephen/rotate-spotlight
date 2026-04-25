@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap");
 @import "tailwindcss" source(none);
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap");
 @source "../src";
 @import "tw-animate-css";
 
@@ -96,7 +98,7 @@
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
 
-  /* SignalOps section tokens — DARK (default) */
+  /* SignalOps section tokens â€” DARK (default) */
   --bg-deep: oklch(0.11 0.018 245);
   --bg-surface: oklch(0.14 0.022 240);
   --cream: oklch(0.965 0.018 85);
@@ -132,7 +134,7 @@
   --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Light mode overrides — applied when <html> has .light */
+/* Light mode overrides â€” applied when <html> has .light */
 .light {
   --bg-deep: oklch(0.985 0.005 240);
   --bg-surface: oklch(0.96 0.008 240);
