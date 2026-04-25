@@ -29,19 +29,19 @@ export function AgentCard({ agent, active = false }: Props) {
             style={{ background: "radial-gradient(closest-side, var(--agent-mint) 0%, transparent 70%)" }} />
         )}
 
-        {/* Header */}
-        <div className="relative flex items-center justify-between p-5 pb-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl flex-shrink-0"
-              style={{ background: "linear-gradient(145deg, oklch(0.32 0.02 230), oklch(0.2 0.015 240))", boxShadow: "inset 0 1px 0 oklch(1 0 0 / 0.08), inset 0 0 0 1px oklch(0.5 0.01 235 / 0.3)" }}>
+        {/* Header — icon bare, no box */}
+        <div className="relative flex items-center justify-between px-6 pt-6 pb-4">
+          <div className="flex items-center gap-4">
+            {/* Icon: no background box, bigger, brighter */}
+            <div className="flex items-center justify-center flex-shrink-0" style={{ width: "48px", height: "48px" }}>
               {agent.iconImg
-                ? <img src={agent.iconImg} alt={agent.name} className="h-10 w-10 object-contain" style={{ filter: "drop-shadow(0 0 6px oklch(0.82 0.14 175 / 0.5))" }} />
-                : <Icon className="h-5 w-5" strokeWidth={1.5} style={{ color: "var(--agent-mint)" }} />
+                ? <img src={agent.iconImg} alt={agent.name} className="object-contain" style={{ width: "44px", height: "44px", filter: "drop-shadow(0 0 10px oklch(0.82 0.14 175 / 0.75)) brightness(1.2)" }} />
+                : <Icon className="h-7 w-7" strokeWidth={1.5} style={{ color: "var(--agent-mint)", filter: "drop-shadow(0 0 8px oklch(0.82 0.14 175 / 0.65))" }} />
               }
             </div>
             <div>
-              <div className="font-mono text-[9px] uppercase tracking-[0.2em]" style={{ color: "var(--agent-mint-dim)" }}>{agent.label}</div>
-              <div className="font-mono text-xl font-bold tracking-[0.1em]" style={{ color: "var(--agent-mint)", textShadow: "0 0 12px oklch(0.82 0.14 175 / 0.5)" }}>{agent.name}</div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--agent-mint-dim)" }}>{agent.label}</div>
+              <div className="font-mono text-2xl font-bold tracking-[0.1em]" style={{ color: "var(--agent-mint)", textShadow: "0 0 12px oklch(0.82 0.14 175 / 0.5)" }}>{agent.name}</div>
             </div>
           </div>
           <div className="flex items-center gap-1.5 rounded-full px-3 py-1.5"
@@ -51,11 +51,11 @@ export function AgentCard({ agent, active = false }: Props) {
           </div>
         </div>
 
-        {/* Terminal screen — tall */}
-        <div className="mx-5 rounded-2xl p-[1.5px]"
+        {/* Terminal screen */}
+        <div className="mx-6 rounded-2xl p-[1.5px]"
           style={{ background: "var(--gradient-frame)", boxShadow: active ? "0 0 20px oklch(0.82 0.14 175 / 0.2)" : "none" }}>
-          <div className="rounded-[14.5px] p-4" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", minHeight: "180px" }}>
-            <div className="space-y-2 font-mono text-[12px] leading-relaxed">
+          <div className="rounded-[14.5px] p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", minHeight: "180px" }}>
+            <div className="space-y-2.5 font-mono text-[13px] leading-relaxed">
               {agent.logs.map((log, i) => (
                 <div key={i} style={{
                   color: log.type === "alert" ? "var(--agent-coral)" : log.type === "queued" ? "var(--agent-mint-soft)" : "var(--agent-text-muted)",
@@ -63,7 +63,7 @@ export function AgentCard({ agent, active = false }: Props) {
                 }}>{log.text}</div>
               ))}
             </div>
-            <button className="relative mt-4 w-full rounded-full py-2.5 font-mono text-xs font-medium transition-all hover:brightness-125"
+            <button className="relative mt-5 w-full rounded-full py-2.5 font-mono text-xs font-medium transition-all hover:brightness-125"
               style={{ background: "linear-gradient(180deg, oklch(0.82 0.14 175 / 0.18), oklch(0.82 0.14 175 / 0.06))", boxShadow: "inset 0 0 0 1px oklch(0.82 0.14 175 / 0.4)", color: "var(--agent-mint)" }}>
               {agent.cta}
             </button>
@@ -71,9 +71,9 @@ export function AgentCard({ agent, active = false }: Props) {
         </div>
 
         {/* Body */}
-        <div className="flex flex-col px-5 pt-4 pb-5 flex-1">
-          <h3 className="text-[17px] font-bold leading-snug mb-2.5" style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{agent.heading}</h3>
-          <p className="text-[13px] leading-relaxed flex-1" style={{ color: "var(--agent-text-muted)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{agent.body}</p>
+        <div className="flex flex-col px-6 pt-5 pb-6 flex-1">
+          <h3 className="text-[18px] font-bold leading-snug mb-3" style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{agent.heading}</h3>
+          <p className="text-[14px] leading-relaxed flex-1" style={{ color: "var(--agent-text-muted)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>{agent.body}</p>
           <div className="mt-4 pt-3 flex items-center gap-2" style={{ borderTop: "1px solid oklch(0.82 0.14 175 / 0.12)" }}>
             <span className="h-1.5 w-1.5 rounded-full flex-shrink-0" style={{ background: "var(--agent-mint)" }} />
             <span className="font-mono text-[11px] font-semibold" style={{ color: "oklch(0.82 0.14 175 / 0.8)" }}>
