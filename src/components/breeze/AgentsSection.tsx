@@ -15,7 +15,7 @@ export function AgentsSection() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center text-center gap-3 mb-10">
           <h2
-            className="text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl text-center w-full"
+            className="text-2xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-center w-full whitespace-nowrap"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
           >
             <span style={{ color: "var(--ink)" }}>Six AI Agents. </span>
