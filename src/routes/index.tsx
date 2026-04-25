@@ -21,8 +21,8 @@ function Nav() {
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <img src="/logo.png" alt="SignalOps" style={{ height: "36px", objectFit: "contain" }}
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
-          <span className="font-mono text-[10px] uppercase tracking-[0.2em]"
-            style={{ color: "var(--agent-mint-dim)", borderLeft: "1px solid var(--agent-border)", paddingLeft: "10px" }}>
+          <span className="font-mono text-[11px] uppercase tracking-[0.2em]"
+            style={{ color: "#ffffff", borderLeft: "1px solid var(--agent-border)", paddingLeft: "10px", opacity: 0.7 }}>
             Revenue Intelligence
           </span>
         </div>
