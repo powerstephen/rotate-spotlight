@@ -24,9 +24,8 @@ function Nav() {
     }}>
       <div className="mx-auto max-w-7xl px-6" style={{ height: "64px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <span className="font-mono text-xl font-bold tracking-wide" style={{ color: "var(--agent-mint)" }}>
-            SignalOps
-          </span>
+          <img src="/logo.png" alt="SignalOps" style={{ height: "36px", objectFit: "contain" }}
+               onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
           <span className="font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--agent-mint-dim)", borderLeft: "1px solid var(--agent-border)", paddingLeft: "10px" }}>
             Revenue Intelligence
           </span>
@@ -49,8 +48,12 @@ function Footer() {
   return (
     <footer style={{ borderTop: "1px solid oklch(0.32 0.04 200 / 0.15)", padding: "24px 0", background: "var(--bg-deep)" }}>
       <div className="mx-auto max-w-7xl px-6" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <span className="font-mono text-sm font-bold" style={{ color: "var(--agent-mint)" }}>SignalOps</span>
-        <span className="font-mono text-[11px] uppercase tracking-widest" style={{ color: "var(--agent-text-muted)" }}>© 2026 Koreva</span>
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <img src="/logo.png" alt="SignalOps" style={{ height: "24px", objectFit: "contain", opacity: 0.5 }}
+               onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+          <span className="font-mono text-sm font-bold" style={{ color: "var(--agent-mint)" }}>SignalOps</span>
+        </div>
+        <span className="font-mono text-[11px] uppercase tracking-widest" style={{ color: "var(--agent-text-muted)" }}>© 2026 SignalOps</span>
       </div>
     </footer>
   );
