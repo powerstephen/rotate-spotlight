@@ -70,7 +70,7 @@ function SectionDivider() {
 
 function Index() {
   return (
-    <main style={{ background: "var(--bg-deep)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+    <main style={{ background: "var(--bg-deep)", fontFamily: "'Montserrat', sans-serif" }}>
       <Nav />
       <HeroSection />
       <SectionDivider />
