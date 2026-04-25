@@ -26,8 +26,8 @@ export function ProblemsSection() {
             The problems we solve
           </p>
           <h2
-            className="mt-5 text-4xl leading-[1.1] tracking-tight md:text-5xl lg:text-[56px]"
-            style={{ color: "var(--agent-text)", fontFamily: "Georgia, serif" }}
+            className="mt-5 text-3xl leading-tight tracking-tight md:text-4xl"
+            style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
           >
             Tackling the <span style={{ color: "var(--agent-mint)" }}>real problems</span> of growing businesses.
           </h2>
@@ -74,8 +74,8 @@ export function ProblemsSection() {
                   }}
                 >
                   <p
-                    className="text-2xl leading-snug md:text-[32px] md:leading-[1.25]"
-                    style={{ color: "var(--agent-text)", fontFamily: "Georgia, serif" }}
+                    className="text-xl leading-snug md:text-2xl md:leading-tight"
+                    style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                   >
                     "{q.text}"
                   </p>
