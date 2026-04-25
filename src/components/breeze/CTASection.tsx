@@ -59,7 +59,7 @@ export function CTASection() {
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
           <h2
-            className="text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl text-center w-full"
+            className="text-2xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-center w-full whitespace-nowrap"
             style={{ color: "var(--agent-text)", fontFamily: "\'Plus Jakarta Sans\', sans-serif" }}
           >
             Join the beta.{" "}
