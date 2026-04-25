@@ -60,7 +60,7 @@ export function CTASection() {
         <div className="mx-auto max-w-3xl text-center">
           <h2
             className="text-2xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-center w-full whitespace-nowrap"
-            style={{ color: "var(--agent-text)", fontFamily: "\'Plus Jakarta Sans\', sans-serif" }}
+            style={{ color: "var(--agent-text)", fontFamily: "Montserrat, sans-serif" }}
           >
             Join the beta.{" "}
             <span style={{ color: "var(--agent-mint)" }}>
@@ -70,17 +70,9 @@ export function CTASection() {
 
           <div className="mt-5 flex justify-center">
             <span
-              className="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em]"
-              style={{
-                borderColor: "var(--agent-coral)",
-                background: "var(--agent-coral-soft)",
-                color: "var(--agent-coral)",
-              }}
+              className="font-mono text-[11px] uppercase tracking-[0.22em]"
+              style={{ color: "var(--agent-text-muted)" }}
             >
-              <span
-                className="h-1.5 w-1.5 rounded-full"
-                style={{ background: "var(--agent-coral)" }}
-              />
               Limited to 30 companies · Launching June 2026
             </span>
           </div>
@@ -139,7 +131,7 @@ export function CTASection() {
                   className="text-2xl"
                   style={{
                     color: "var(--agent-text)",
-                    fontFamily: "'Plus Jakarta Sans', sans-serif",
+                    fontFamily: "'Montserrat', sans-serif",
                   }}
                 >
                   You're on the list.
