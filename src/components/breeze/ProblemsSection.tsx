@@ -22,9 +22,6 @@ export function ProblemsSection() {
     <section className="w-full px-6 py-20 md:py-28" style={{ background: "var(--bg-deep)" }}>
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="font-mono text-[11px] uppercase tracking-[0.28em]" style={{ color: "var(--agent-mint-soft)" }}>
-            The problems we solve
-          </p>
           <h2
             className="mt-5 text-3xl leading-tight tracking-tight md:text-4xl"
             style={{ color: "var(--agent-text)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}
