@@ -103,7 +103,7 @@ export function HeroSection() {
 
           {/* LEFT */}
           <div>
-            <div className="font-mono text-[10px] uppercase tracking-[0.22em] mb-5" style={{ color: "var(--agent-mint)" }}>
+            <div className="hidden lg:block font-mono text-[10px] uppercase tracking-[0.22em] mb-5" style={{ color: "var(--agent-mint)" }}>
               Revenue Intelligence Platform
             </div>
             <h1 style={{ color: "var(--ink)", fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: "clamp(1.9rem, 3.2vw, 2.6rem)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.02em" }}>
@@ -113,9 +113,7 @@ export function HeroSection() {
               <span style={{ color: "var(--agent-mint)" }}>It's all in your data.</span><br />
               <span style={{ color: "var(--agent-mint)" }}>SignalOps unlocks it.</span>
             </h1>
-            <p className="mt-5 text-base leading-relaxed" style={{ color: "var(--agent-text-muted)", fontFamily: "'Plus Jakarta Sans', sans-serif", maxWidth: "440px" }}>
-              Six AI agents working 24/7 to protect your revenue, close your deals and find your next best customers.
-            </p>
+
             <a href="#cta" className="mt-8 inline-flex items-center gap-2 rounded-full px-6 py-3 font-mono text-sm font-semibold transition-all hover:brightness-110"
               style={{ background: "linear-gradient(180deg, oklch(0.82 0.14 175/0.95), oklch(0.72 0.13 175/0.9))", color: "oklch(0.14 0.025 235)", boxShadow: "inset 0 1px 0 oklch(1 0 0/0.2), 0 0 18px oklch(0.82 0.14 175/0.4)" }}>
               Join the beta. 30 spots only →
@@ -145,7 +143,7 @@ export function HeroSection() {
                       <span className="h-2.5 w-2.5 rounded-full" style={{ background: "oklch(0.72 0.19 145/0.8)" }} />
                       <span className="ml-3 font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--agent-mint-dim)" }}>SignalOps · Live Signal Feed</span>
                     </div>
-                    <div className="space-y-2.5 font-mono text-[12px] leading-relaxed">
+                    <div className="space-y-2.5 font-mono text-[13px] leading-relaxed">
                       {trimmed.map(line => <SignalLine key={line.id} line={line} />)}
                     </div>
                   </div>
