@@ -17,19 +17,24 @@ export const Route = createFileRoute("/")({
 function Nav() {
   return (
     <nav style={{ position: "sticky", top: 0, zIndex: 100, background: "oklch(0.11 0.018 245 / 0.92)", backdropFilter: "blur(12px)", borderBottom: "1px solid oklch(0.32 0.04 200 / 0.15)" }}>
-      <div className="mx-auto max-w-7xl px-6" style={{ height: "64px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+      <div className="mx-auto max-w-7xl px-6" style={{ height: "64px", display: "grid", gridTemplateColumns: "1fr auto 1fr", alignItems: "center" }}>
+        {/* Left: logo */}
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <img src="/logo.png" alt="SignalOps" style={{ height: "36px", objectFit: "contain" }}
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
-          <span className="font-mono text-[11px] uppercase tracking-[0.2em]"
-            style={{ color: "#ffffff", borderLeft: "1px solid var(--agent-border)", paddingLeft: "10px", opacity: 0.7 }}>
-            Revenue Intelligence
-          </span>
         </div>
-        <a href="#cta" className="font-mono text-xs font-medium transition-all hover:brightness-110"
-          style={{ background: "linear-gradient(180deg, oklch(0.82 0.14 175 / 0.95), oklch(0.72 0.13 175 / 0.9))", color: "oklch(0.14 0.025 235)", padding: "8px 20px", borderRadius: "100px", boxShadow: "0 0 14px oklch(0.82 0.14 175 / 0.3)" }}>
-          Join beta
-        </a>
+        {/* Centre: tagline */}
+        <span className="font-mono uppercase tracking-[0.22em]"
+          style={{ color: "#ffffff", fontSize: "13px", opacity: 0.85, letterSpacing: "0.22em", textAlign: "center" }}>
+          Revenue Intelligence Platform
+        </span>
+        {/* Right: CTA */}
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <a href="#cta" className="font-mono text-xs font-medium transition-all hover:brightness-110"
+            style={{ background: "linear-gradient(180deg, oklch(0.82 0.14 175 / 0.95), oklch(0.72 0.13 175 / 0.9))", color: "oklch(0.14 0.025 235)", padding: "8px 20px", borderRadius: "100px", boxShadow: "0 0 14px oklch(0.82 0.14 175 / 0.3)" }}>
+            Join beta
+          </a>
+        </div>
       </div>
     </nav>
   );
@@ -55,6 +60,8 @@ function Index() {
     <main style={{ background: "var(--bg-deep)", fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
       <Nav />
       <HeroSection />
+      {/* Teal section divider — bright centre, fades to edges */}
+      <div style={{ width: "100%", height: "1px", background: "linear-gradient(90deg, transparent 0%, oklch(0.82 0.14 175 / 0.08) 15%, oklch(0.82 0.14 175 / 0.7) 40%, oklch(0.82 0.14 175 / 0.9) 50%, oklch(0.82 0.14 175 / 0.7) 60%, oklch(0.82 0.14 175 / 0.08) 85%, transparent 100%)", boxShadow: "0 0 12px oklch(0.82 0.14 175 / 0.25)" }} />
       <ProblemsSection />
       <AgentsSection />
       <div id="cta"><CTASection /></div>
