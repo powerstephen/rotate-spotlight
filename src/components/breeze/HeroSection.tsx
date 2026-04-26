@@ -92,7 +92,16 @@ export function HeroSection() {
   );
 
   return (
-    <section className="w-full px-6 pt-10 pb-20 md:pt-14 md:pb-24" style={{ background: "var(--bg-deep)" }}>
+    <section className="w-full px-6 pt-10 pb-28 md:pt-14 md:pb-36" style={{ background: "var(--bg-deep)", position: "relative", overflow: "hidden" }}>
+      {/* Subtle global grid — same as CTA */}
+      <div aria-hidden className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: "linear-gradient(var(--agent-mint) 1px, transparent 1px), linear-gradient(90deg, var(--agent-mint) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
+          opacity: 0.03,
+          maskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
+        }}
+      />
       <style>{`
         @keyframes hero-cursor-blink { 0%,49%{opacity:1}50%,100%{opacity:0} }
         @keyframes hero-rec-pulse { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.75)} }
