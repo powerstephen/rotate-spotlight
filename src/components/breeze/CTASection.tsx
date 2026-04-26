@@ -59,7 +59,7 @@ export function CTASection() {
         {/* Heading */}
         <div className="mx-auto max-w-3xl text-center">
           <h2
-            className="text-2xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-center w-full whitespace-nowrap"
+            className="text-xl font-bold leading-tight tracking-tight md:text-3xl lg:text-4xl text-center w-full md:whitespace-nowrap"
             style={{ color: "var(--agent-text)", fontFamily: "Montserrat, sans-serif" }}
           >
             Join the beta.{" "}
@@ -103,7 +103,7 @@ export function CTASection() {
             className="py-2"
           >
             {submitted ? (
-              <div className="flex min-h-[420px] flex-col items-center justify-center text-center">
+              <div className="flex min-h-[280px] flex-col items-center justify-center text-center pt-4">
                 <div
                   className="mb-5 flex h-14 w-14 items-center justify-center rounded-full"
                   style={{
