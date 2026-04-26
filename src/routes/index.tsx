@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
 function Nav() {
   return (
     <nav style={{ position: "sticky", top: 0, zIndex: 100, background: "oklch(0.11 0.018 245 / 0.92)", backdropFilter: "blur(12px)", borderBottom: "1px solid oklch(0.32 0.04 200 / 0.15)" }}>
-      <div className="mx-auto max-w-7xl px-6" style={{ height: "64px", display: "grid", gridTemplateColumns: "1fr auto 1fr", alignItems: "center" }}>
+      <div className="mx-auto max-w-7xl px-6" style={{ height: "64px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         {/* Left: logo */}
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <img src="/logo.png" alt="SignalOps" style={{ height: "36px", objectFit: "contain" }}
@@ -25,16 +25,14 @@ function Nav() {
         </div>
         {/* Centre: tagline — hidden on mobile */}
         <span className="hidden md:block font-mono uppercase tracking-[0.22em]"
-          style={{ color: "#ffffff", fontSize: "15px", fontWeight: 700, opacity: 0.9, letterSpacing: "0.22em", textAlign: "center" }}>
+          style={{ color: "#ffffff", fontSize: "15px", fontWeight: 700, opacity: 0.9, letterSpacing: "0.22em", textAlign: "center", position: "absolute", left: "50%", transform: "translateX(-50%)" }}>
           Revenue Intelligence Platform
         </span>
         {/* Right: CTA */}
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <a href="#cta" className="font-mono text-xs font-medium transition-all hover:brightness-110"
-            style={{ background: "linear-gradient(180deg, oklch(0.82 0.14 175 / 0.95), oklch(0.72 0.13 175 / 0.9))", color: "oklch(0.14 0.025 235)", padding: "8px 20px", borderRadius: "100px", boxShadow: "0 0 14px oklch(0.82 0.14 175 / 0.3)" }}>
-            Join beta
-          </a>
-        </div>
+        <a href="#cta" className="font-mono text-xs font-medium transition-all hover:brightness-110"
+          style={{ background: "linear-gradient(180deg, oklch(0.82 0.14 175 / 0.95), oklch(0.72 0.13 175 / 0.9))", color: "oklch(0.14 0.025 235)", padding: "8px 20px", borderRadius: "100px", boxShadow: "0 0 14px oklch(0.82 0.14 175 / 0.3)", whiteSpace: "nowrap" }}>
+          Join beta
+        </a>
       </div>
     </nav>
   );
