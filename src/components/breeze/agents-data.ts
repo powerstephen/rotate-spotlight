@@ -57,8 +57,8 @@ export const AGENTS: Agent[] = [
   {
     id: "recover", label: "AI Agent", name: "RECOVER", icon: RefreshCcw, iconImg: "/agent-recover.png",
     cta: "Review Re-engagement Queue",
-    heading: "Win back accounts before they're gone for good.",
-    body: "Watches every dormant and closed-lost account for renewed buying signals — hiring changes, funding events, product launches.",
+    heading: "Dormant and dead leads. Reactivated with purpose.",
+    body: "Monitors your entire dormant and closed-lost database for renewed buying signals. When the moment is right, the right outreach is queued automatically.",
     logs: [
       { type: "info", text: "→ monitoring 89 dormant accounts..." },
       { type: "alert", text: "! TechCorp · Series B announced" },
@@ -69,8 +69,8 @@ export const AGENTS: Agent[] = [
   {
     id: "generate", label: "AI Agent", name: "GENERATE", icon: Rocket, iconImg: "/agent-generate.png",
     cta: "Review Prospects",
-    heading: "Find your next best customers before they find you.",
-    body: "Continuously matches live buying signals against your ICP — funding rounds, senior hires, product launches. Surfaces the right companies at exactly the right moment.",
+    heading: "Find your best-match customers. Already in-market.",
+    body: "Continuously matches live market signals against your ICP — funding rounds, senior hires, product launches. Your best-match prospects, surfaced at exactly the right moment.",
     logs: [
       { type: "info", text: "→ scanning market signals..." },
       { type: "alert", text: "★ ScaleUp Co · ICP match · 94%" },
