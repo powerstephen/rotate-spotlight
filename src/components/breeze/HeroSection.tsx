@@ -113,7 +113,7 @@ export function HeroSection() {
           {/* LEFT */}
           <div style={{ paddingTop: "8px" }}>
 
-            <h1 style={{ color: "var(--ink)", fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(2.4rem, 4vw, 3.4rem)", fontWeight: 600, lineHeight: 1.22, letterSpacing: "-0.02em" }}>
+            <h1 style={{ color: "var(--ink)", fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1.75rem, 5vw, 3.4rem)", fontWeight: 600, lineHeight: 1.22, letterSpacing: "-0.02em" }}>
               Your best customers,<br />
               your biggest risks,<br />
               your next deal.<br />
