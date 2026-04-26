@@ -11,7 +11,7 @@ export function AgentsSection() {
   const positions = [-1, 0, 1];
 
   return (
-    <section className="w-full px-6 py-14 md:py-20" style={{ background: "var(--bg-deep)" }}>
+    <section className="w-full px-6 py-20 md:py-24" style={{ background: "var(--bg-deep)" }}>
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center text-center gap-3 mb-10">
           <h2
@@ -21,9 +21,9 @@ export function AgentsSection() {
             <span style={{ color: "var(--ink)" }}>Six AI Agents. </span>
             <span style={{ color: "var(--agent-mint)" }}>Built for profitable growth.</span>
           </h2>
-          <div className="flex md:items-end md:justify-end">
-            
-          </div>
+          <p className="font-mono text-[13px]" style={{ color: "var(--agent-text-muted)" }}>
+            Always on. Turning signals into revenue decisions.
+          </p>
         </div>
 
         <div className="mt-20 grid gap-10 lg:grid-cols-[260px_1fr] lg:gap-16">
