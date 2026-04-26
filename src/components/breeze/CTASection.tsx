@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from "react";
+import React, { useState, type FormEvent } from "react";
 import { ArrowRight, Loader2 } from "lucide-react";
 import { useServerFn } from "@tanstack/react-start";
 import { submitBetaSignup } from "@/lib/beta-signup";
@@ -100,12 +100,7 @@ export function CTASection() {
           {/* Form */}
           <form
             onSubmit={onSubmit}
-            className="rounded-2xl border p-6 md:p-8"
-            style={{
-              borderColor: "var(--agent-border)",
-              background: "var(--gradient-agent)",
-              boxShadow: "var(--shadow-card)",
-            }}
+            className="py-2"
           >
             {submitted ? (
               <div className="flex min-h-[420px] flex-col items-center justify-center text-center">
@@ -219,11 +214,12 @@ function Field({
   type?: string;
   placeholder?: string;
 }) {
+  const [focused, setFocused] = React.useState(false);
   return (
     <label className="block">
       <span
         className="mb-2 block font-mono text-[10px] uppercase tracking-[0.22em]"
-        style={{ color: "var(--agent-text-muted)" }}
+        style={{ color: "var(--agent-mint)" }}
       >
         {label}
       </span>
@@ -232,10 +228,13 @@ function Field({
         name={name}
         type={type}
         placeholder={placeholder}
-        className="w-full border-b bg-transparent py-2.5 text-base outline-none transition-colors focus:border-current"
+        onFocus={() => setFocused(true)}
+        onBlur={() => setFocused(false)}
+        className="w-full border-b bg-transparent py-2.5 text-base outline-none transition-colors"
         style={{
-          borderColor: "var(--agent-border)",
+          borderColor: focused ? "var(--agent-mint)" : "var(--agent-border)",
           color: "var(--agent-text)",
+          caretColor: "var(--agent-mint)",
         }}
       />
     </label>
