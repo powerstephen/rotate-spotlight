@@ -55,7 +55,7 @@ export function AgentCard({ agent, active = false }: Props) {
         <div className="mx-6 rounded-2xl p-[1.5px]"
           style={{ background: "var(--gradient-frame)", boxShadow: active ? "0 0 20px oklch(0.82 0.14 175 / 0.2)" : "none" }}>
           <div className="rounded-[14.5px] p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", height: "210px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-            <div className="space-y-2 font-mono text-[11.5px] leading-snug">
+            <div className="space-y-2 font-mono text-[10px] md:text-[11.5px] leading-snug">
               {agent.logs.map((log, i) => (
                 <div key={i} style={{
                   color: log.type === "alert" ? "var(--agent-coral)" : log.type === "queued" ? "var(--agent-mint-soft)" : "var(--agent-text-muted)",
@@ -72,8 +72,8 @@ export function AgentCard({ agent, active = false }: Props) {
 
         {/* Body */}
         <div className="flex flex-col px-8 pt-5 pb-7 flex-1">
-          <h3 className="text-[18px] font-bold leading-snug mb-3" style={{ color: "var(--agent-text)", fontFamily: "'Montserrat', sans-serif" }}>{agent.heading}</h3>
-          <p className="text-[14px] leading-relaxed flex-1" style={{ color: "var(--agent-text-muted)", fontFamily: "'Montserrat', sans-serif" }}>{agent.body}</p>
+          <h3 className="text-[15px] md:text-[18px] font-bold leading-snug mb-3" style={{ color: "var(--agent-text)", fontFamily: "'Montserrat', sans-serif" }}>{agent.heading}</h3>
+          <p className="text-[12px] md:text-[14px] leading-relaxed flex-1" style={{ color: "var(--agent-text-muted)", fontFamily: "'Montserrat', sans-serif" }}>{agent.body}</p>
           <div className="mt-4 pt-3 flex items-center gap-2" style={{ borderTop: "1px solid oklch(0.82 0.14 175 / 0.12)" }}>
             <span className="h-1.5 w-1.5 rounded-full flex-shrink-0" style={{ background: "var(--agent-mint)" }} />
             <span className="font-mono text-[11px] font-semibold" style={{ color: "oklch(0.82 0.14 175 / 0.8)" }}>
