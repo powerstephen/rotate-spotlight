@@ -11,7 +11,15 @@ export function AgentsSection() {
   const positions = [-1, 0, 1];
 
   return (
-    <section className="w-full px-6 py-20 md:py-24" style={{ background: "var(--bg-deep)" }}>
+    <section className="w-full px-6 py-20 md:py-24" style={{ background: "var(--bg-deep)", position: "relative", overflow: "hidden" }}>
+      <div aria-hidden className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: "linear-gradient(var(--agent-mint) 1px, transparent 1px), linear-gradient(90deg, var(--agent-mint) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
+          opacity: 0.03,
+          maskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
+        }}
+      />
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center text-center gap-3 mb-10">
           <h2
