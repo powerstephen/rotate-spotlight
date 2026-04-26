@@ -212,4 +212,9 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+
+  input::placeholder {
+    color: oklch(0.55 0.01 235);
+    opacity: 1;
+  }
 }
