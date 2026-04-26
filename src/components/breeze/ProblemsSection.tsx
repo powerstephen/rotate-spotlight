@@ -55,14 +55,14 @@ export function ProblemsSection() {
         </div>
 
         <div className="mx-auto mt-8 max-w-4xl">
-          <div className="relative min-h-[200px] overflow-hidden md:min-h-[220px]">
+          <div className="relative min-h-[260px] overflow-hidden md:min-h-[220px]">
             {QUOTES.map((q, i) => {
               const isActive = i === active;
               const offset = i - active;
               return (
                 <blockquote
                   key={q.id}
-                  className="absolute inset-0 flex flex-col items-center justify-center text-center"
+                  className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
                   style={{
                     transform: isActive ? "translateX(0)" : `translateX(${offset > 0 || (offset < 0 && direction === -1) ? "40px" : "-40px"})`,
                     opacity: isActive ? 1 : 0,
@@ -74,7 +74,7 @@ export function ProblemsSection() {
                   }}
                 >
                   <p
-                    className="text-2xl font-semibold leading-snug md:text-3xl"
+                    className="text-lg font-semibold leading-snug md:text-3xl"
                     style={{ color: "var(--agent-text)", fontFamily: "'Montserrat', sans-serif" }}
                   >
                     "{q.text}"
