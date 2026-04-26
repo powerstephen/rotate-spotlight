@@ -30,8 +30,8 @@ export function AgentCard({ agent, active = false }: Props) {
         )}
 
         {/* Header — icon bare, no box */}
-        <div className="relative flex items-center justify-between px-6 pt-6 pb-4">
-          <div className="flex items-center gap-4">
+        <div className="relative flex items-start justify-between px-6 pt-6 pb-4">
+          <div className="flex items-center gap-4 pr-20">
             {/* Icon: no background box, bigger, brighter */}
             <div className="flex items-center justify-center flex-shrink-0" style={{ width: "56px", height: "56px" }}>
               {agent.iconImg
@@ -41,10 +41,11 @@ export function AgentCard({ agent, active = false }: Props) {
             </div>
             <div>
               <div className="font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: "var(--agent-mint-dim)" }}>{agent.label}</div>
-              <div className="font-mono text-2xl font-bold tracking-[0.1em]" style={{ color: "var(--agent-mint)", textShadow: "0 0 12px oklch(0.82 0.14 175 / 0.5)" }}>{agent.name}</div>
+              <div className="font-mono text-xl md:text-2xl font-bold tracking-[0.1em]" style={{ color: "var(--agent-mint)", textShadow: "0 0 12px oklch(0.82 0.14 175 / 0.5)" }}>{agent.name}</div>
             </div>
           </div>
-          <div className="flex items-center gap-1.5 rounded-full px-3 py-1.5"
+          {/* ACTIVE badge — absolute top-right so it never clashes with long names */}
+          <div className="absolute top-6 right-6 flex items-center gap-1.5 rounded-full px-3 py-1.5 flex-shrink-0"
             style={{ background: "oklch(0.18 0.03 200 / 0.8)", boxShadow: "inset 0 0 0 1px oklch(0.82 0.14 175 / 0.4)" }}>
             <span className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--agent-mint)", boxShadow: "0 0 6px var(--agent-mint)" }} />
             <span className="font-mono text-[9px] uppercase tracking-wider" style={{ color: "var(--agent-mint)" }}>Active</span>
@@ -54,8 +55,8 @@ export function AgentCard({ agent, active = false }: Props) {
         {/* Terminal screen */}
         <div className="mx-6 rounded-2xl p-[1.5px]"
           style={{ background: "var(--gradient-frame)", boxShadow: active ? "0 0 20px oklch(0.82 0.14 175 / 0.2)" : "none" }}>
-          <div className="rounded-[14.5px] p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", height: "210px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-            <div className="space-y-2 font-mono text-[10px] md:text-[11.5px] leading-snug">
+          <div className="rounded-[14.5px] p-4 md:p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", height: "190px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <div className="space-y-1.5 font-mono text-[9px] md:text-[11.5px] leading-tight">
               {agent.logs.map((log, i) => (
                 <div key={i} style={{
                   color: log.type === "alert" ? "var(--agent-coral)" : log.type === "queued" ? "var(--agent-mint-soft)" : "var(--agent-text-muted)",
