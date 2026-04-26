@@ -92,7 +92,7 @@ export function HeroSection() {
   );
 
   return (
-    <section className="w-full px-6 pt-10 pb-14 md:pt-14 md:pb-20" style={{ background: "var(--bg-deep)" }}>
+    <section className="w-full px-6 pt-10 pb-20 md:pt-14 md:pb-24" style={{ background: "var(--bg-deep)" }}>
       <style>{`
         @keyframes hero-cursor-blink { 0%,49%{opacity:1}50%,100%{opacity:0} }
         @keyframes hero-rec-pulse { 0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.75)} }
