@@ -23,7 +23,7 @@ export function ProblemsSection() {
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <h2
-            className="text-2xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-center w-full whitespace-nowrap"
+            className="text-xl font-bold leading-tight tracking-tight md:text-3xl lg:text-4xl text-center w-full md:whitespace-nowrap"
             style={{ color: "var(--agent-text)", fontFamily: "Montserrat, sans-serif", textAlign: "center" }}
           >
             Tackling the <span style={{ color: "var(--agent-mint)" }}>real problems</span> of growing businesses.
@@ -33,13 +33,13 @@ export function ProblemsSection() {
           </p>
         </div>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-3 md:gap-3.5">
+        <div className="mt-10 flex flex-wrap justify-center gap-2 md:gap-3.5">
           {PROBLEMS.map((p) => {
             const lit = activeHighlights.has(p);
             return (
               <span
                 key={p}
-                className={cn("rounded-full border px-4 py-2 font-mono text-[11px] uppercase tracking-[0.18em] transition-all duration-700")}
+                className={cn("rounded-full border px-3 py-1.5 md:px-4 md:py-2 font-mono text-[9px] md:text-[11px] uppercase tracking-[0.15em] md:tracking-[0.18em] transition-all duration-700")}
                 style={{
                   borderColor: lit ? "var(--agent-mint-soft)" : "var(--agent-border)",
                   background: lit ? "var(--pill-bg-lit)" : "var(--pill-bg-dim)",
