@@ -19,7 +19,7 @@ export function ProblemsSection() {
   const activeHighlights = new Set<Problem>(QUOTES[active].highlights);
 
   return (
-    <section className="w-full px-6 py-14 md:py-20" style={{ background: "var(--bg-surface)" }}>
+    <section className="w-full px-6 py-20 md:py-24" style={{ background: "var(--bg-surface)" }}>
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <h2
@@ -28,9 +28,12 @@ export function ProblemsSection() {
           >
             Tackling the <span style={{ color: "var(--agent-mint)" }}>real problems</span> of growing businesses.
           </h2>
+          <p className="mt-4 font-mono text-[13px]" style={{ color: "var(--agent-text-muted)" }}>
+            Hidden in your data. Missed by most teams.
+          </p>
         </div>
 
-        <div className="mt-14 flex flex-wrap justify-center gap-3 md:gap-3.5">
+        <div className="mt-10 flex flex-wrap justify-center gap-3 md:gap-3.5">
           {PROBLEMS.map((p) => {
             const lit = activeHighlights.has(p);
             return (
