@@ -23,8 +23,8 @@ function Nav() {
           <img src="/logo.png" alt="SignalOps" style={{ height: "36px", objectFit: "contain" }}
             onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
         </div>
-        {/* Centre: tagline */}
-        <span className="font-mono uppercase tracking-[0.22em]"
+        {/* Centre: tagline — hidden on mobile */}
+        <span className="hidden md:block font-mono uppercase tracking-[0.22em]"
           style={{ color: "#ffffff", fontSize: "15px", fontWeight: 700, opacity: 0.9, letterSpacing: "0.22em", textAlign: "center" }}>
           Revenue Intelligence Platform
         </span>
