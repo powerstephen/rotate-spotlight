@@ -193,7 +193,7 @@ export function HeroSection() {
                   {/* Inner bezel */}
                   <div className="rounded-[46px] p-[6px]" style={{ background: "oklch(0.1 0.015 235)" }}>
                     {/* Screen area */}
-                    <div className="relative rounded-[40px] overflow-hidden" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", minHeight: "460px", padding: "48px 16px 24px" }}>
+                    <div className="relative rounded-[40px] overflow-hidden" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", height: "460px", padding: "48px 16px 24px" }}>
                       {/* Dynamic island with beacon */}
                       <div className="absolute top-3 left-1/2 -translate-x-1/2 flex items-center justify-center rounded-full"
                         style={{ width: "80px", height: "22px", background: "oklch(0.06 0.01 235)", boxShadow: "inset 0 1px 0 oklch(1 0 0/0.04)" }}>
