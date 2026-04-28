@@ -55,7 +55,7 @@ export function AgentCard({ agent, active = false }: Props) {
         {/* Terminal screen */}
         <div className="mx-6 rounded-2xl p-[1.5px]"
           style={{ background: "var(--gradient-frame)", boxShadow: active ? "0 0 20px oklch(0.82 0.14 175 / 0.2)" : "none" }}>
-          <div className="rounded-[14.5px] p-4 md:p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", height: "228px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+          <div className="rounded-[14.5px] p-4 md:p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", height: "190px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
             <div className="space-y-1.5 font-mono text-[9px] md:text-[11.5px] leading-tight">
               {agent.logs.map((log, i) => (
                 <div key={i} style={{
@@ -77,9 +77,7 @@ export function AgentCard({ agent, active = false }: Props) {
           <p className="text-[12px] md:text-[14px] leading-relaxed flex-1" style={{ color: "var(--agent-text-muted)", fontFamily: "'Montserrat', sans-serif" }}>{agent.body}</p>
           <div className="mt-4 pt-3 flex flex-wrap items-center gap-2" style={{ borderTop: "1px solid oklch(0.82 0.14 175 / 0.12)" }}>
             {agent.tags.map((tag) => (
-              <span key={tag}
-                className="font-mono text-[12px] font-semibold rounded-full px-3 py-1"
-                style={{ color: "var(--agent-mint)", background: "oklch(0.82 0.14 175 / 0.1)", border: "1px solid oklch(0.82 0.14 175 / 0.25)" }}>
+              <span key={tag} className="font-mono text-[11px] font-semibold" style={{ color: "var(--agent-mint)" }}>
                 {tag}
               </span>
             ))}
