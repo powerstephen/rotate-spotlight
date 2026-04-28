@@ -55,7 +55,7 @@ export function AgentCard({ agent, active = false }: Props) {
         {/* Terminal screen */}
         <div className="mx-6 rounded-2xl p-[1.5px]"
           style={{ background: "var(--gradient-frame)", boxShadow: active ? "0 0 20px oklch(0.82 0.14 175 / 0.2)" : "none" }}>
-          <div className="rounded-[14.5px] p-4 md:p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", height: "190px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+          <div className="rounded-[14.5px] p-4 md:p-5" style={{ background: "var(--gradient-screen)", boxShadow: "var(--inset-screen)", height: "228px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
             <div className="space-y-1.5 font-mono text-[9px] md:text-[11.5px] leading-tight">
               {agent.logs.map((log, i) => (
                 <div key={i} style={{
@@ -75,16 +75,14 @@ export function AgentCard({ agent, active = false }: Props) {
         <div className="flex flex-col px-8 pt-5 pb-7 flex-1">
           <h3 className="text-[15px] md:text-[18px] font-bold leading-snug mb-3" style={{ color: "var(--agent-text)", fontFamily: "'Montserrat', sans-serif" }}>{agent.heading}</h3>
           <p className="text-[12px] md:text-[14px] leading-relaxed flex-1" style={{ color: "var(--agent-text-muted)", fontFamily: "'Montserrat', sans-serif" }}>{agent.body}</p>
-          <div className="mt-4 pt-3 flex items-center gap-2" style={{ borderTop: "1px solid oklch(0.82 0.14 175 / 0.12)" }}>
-            <span className="h-1.5 w-1.5 rounded-full flex-shrink-0" style={{ background: "var(--agent-mint)" }} />
-            <span className="font-mono text-[11px] font-semibold" style={{ color: "oklch(0.82 0.14 175 / 0.8)" }}>
-              {agent.id === "icp" ? "ICP built from real data, not assumptions"
-                : agent.id === "ignite" ? "Every customer scored, ranked and actioned"
-                : agent.id === "profit" ? "Every account classified by real profitability"
-                : agent.id === "recover" ? "Dormant accounts ranked by re-engagement likelihood"
-                : agent.id === "generate" ? "In-market prospects matched to your ICP in real time"
-                : "Every stalling deal flagged with a next best action"}
-            </span>
+          <div className="mt-4 pt-3 flex flex-wrap items-center gap-2" style={{ borderTop: "1px solid oklch(0.82 0.14 175 / 0.12)" }}>
+            {agent.tags.map((tag) => (
+              <span key={tag}
+                className="font-mono text-[12px] font-semibold rounded-full px-3 py-1"
+                style={{ color: "var(--agent-mint)", background: "oklch(0.82 0.14 175 / 0.1)", border: "1px solid oklch(0.82 0.14 175 / 0.25)" }}>
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
       </div>
