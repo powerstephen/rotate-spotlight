@@ -3,7 +3,6 @@ import { AgentsSection } from "@/components/breeze/AgentsSection";
 import { ProblemsSection } from "@/components/breeze/ProblemsSection";
 import { CTASection } from "@/components/breeze/CTASection";
 import { HeroSection } from "@/components/breeze/HeroSection";
-
 export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
@@ -13,7 +12,6 @@ export const Route = createFileRoute("/")({
     ],
   }),
 });
-
 function Nav() {
   return (
     <nav style={{ position: "sticky", top: 0, zIndex: 100, background: "oklch(0.11 0.018 245 / 0.92)", backdropFilter: "blur(12px)", borderBottom: "1px solid oklch(0.32 0.04 200 / 0.15)" }}>
@@ -29,15 +27,14 @@ function Nav() {
           Revenue Intelligence Platform
         </span>
         {/* Right: CTA */}
-        <a href="#cta" className="font-mono text-xs font-medium transition-all hover:brightness-110"
+        <a href="https://app.signal-ops.app" target="_blank" rel="noopener noreferrer" className="font-mono text-xs font-medium transition-all hover:brightness-110"
           style={{ background: "linear-gradient(180deg, oklch(0.82 0.14 175 / 0.95), oklch(0.72 0.13 175 / 0.9))", color: "oklch(0.14 0.025 235)", padding: "8px 20px", borderRadius: "100px", boxShadow: "0 0 14px oklch(0.82 0.14 175 / 0.3)", whiteSpace: "nowrap" }}>
-          Join beta
+          Explore demo
         </a>
       </div>
     </nav>
   );
 }
-
 function Footer() {
   return (
     <footer id="cta-anchor" style={{ borderTop: "1px solid oklch(0.32 0.04 200 / 0.15)", padding: "24px 0", background: "var(--bg-deep)" }}>
@@ -52,7 +49,6 @@ function Footer() {
     </footer>
   );
 }
-
 function SectionDivider() {
   return (
     <div style={{ display: "flex", justifyContent: "center", width: "100%", padding: "0", lineHeight: 0 }}>
@@ -65,7 +61,6 @@ function SectionDivider() {
     </div>
   );
 }
-
 function Index() {
   return (
     <main style={{ background: "var(--bg-deep)", fontFamily: "'Montserrat', sans-serif" }}>
